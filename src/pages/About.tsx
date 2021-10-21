@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 function About() {
 
-  const profilePic = "https://raw.githubusercontent.com/divyansh-dxn/Photos/main/me.jpeg"
+  const profilePic = process.env.PUBLIC_URL + "/imgme.jpg"
 
   return (
     <motion.div
@@ -24,7 +24,7 @@ function About() {
         </div>
 
         <div className="flex justify-center items-center">
-          <img className=" rounded-full w-32 md:w-48" src={profilePic} alt="profile picture" />
+          <img className=" rounded-full w-32 md:w-48" src={profilePic} alt="profile" />
         </div>
 
       </div>
