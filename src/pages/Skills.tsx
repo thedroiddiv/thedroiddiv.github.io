@@ -9,9 +9,9 @@ function Skills() {
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             exit={{}}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
         >
-            <div className="flex flex-wrap p-10 items-center justify-center ">
+            <div className="flex flex-wrap md:p-10 items-center justify-center ">
                 {skills.map((skill, index) => (
                     <a className="transform hover:scale-110 duration-100  " key={index} href={skill.url} target="blank">
                         <Chip className="m-4 space-x-4 " >

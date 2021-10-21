@@ -17,15 +17,15 @@ function App() {
       <FloatingBubbles />
 
 
-      <div className="h-screen p-10 overflow-auto bg-fixed bg-no-repeat bg-cover"
+      <div className="h-screen md:p-10 p-4 overflow-auto bg-fixed bg-no-repeat bg-cover"
         style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/bgblue.jpg"})` }}>
 
         {/* glass pannel */}
-        <div className="p-5 md:p-10 bg-fixed bg-gray-900 text-white rounded-3xl min-h-full backdrop-filter backdrop-blur bg-opacity-40 " >
+        <div className="p-4 md:p-10 bg-fixed bg-black text-white rounded-3xl min-h-4/5 backdrop-filter bg-opacity-40 " >
 
           {/* main content */}
           <Navbar />
-          <div className="srcoll flex items-center justify-center" style={{ minHeight: "75vh" }}>
+          <div className="srcoll flex items-center justify-center mt-6 md:mt-0" style={{ minHeight: "60vh" }}>
             <AnimatePresence exitBeforeEnter initial={false}>
               <Switch location={loc} key={loc.pathname}>
                 <Route path="/" exact component={About} />

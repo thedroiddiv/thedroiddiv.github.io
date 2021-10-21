@@ -13,7 +13,7 @@ function ContactMe() {
             initial={{ scaleX: 0, }}
             animate={{ scaleX: 1 }}
             exit={{}}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
         >
 
             <div className="flex flex-col md:flex-row w-full p-10 md:space-x-10">

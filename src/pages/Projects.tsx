@@ -9,7 +9,7 @@ function Projects() {
       initial={{ scaleX: 0 }}
       animate={{ scaleX: 1 }}
       exit={{}}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.3 }}
     >
       <div className="p-2 grid md:grid-cols-2 lg:grid-cols-3 ">
         {projects.map((project, i) => (
