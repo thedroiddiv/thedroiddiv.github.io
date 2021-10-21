@@ -2,6 +2,9 @@ import { motion } from 'framer-motion';
 
 
 function About() {
+
+  const profilePic = "https://raw.githubusercontent.com/divyansh-dxn/Photos/main/me.jpeg"
+
   return (
     <motion.div
     initial={{ scaleX: 0, }}
@@ -21,7 +24,7 @@ function About() {
         </div>
 
         <div className="flex justify-center items-center">
-          <img className=" rounded-full w-32 md:w-48" src="https://media-exp1.licdn.com/dms/image/C4E03AQGAhLV72q4ppw/profile-displayphoto-shrink_800_800/0/1634028591265?e=1640217600&v=beta&t=QTx4BldpsMEimIMahQit5l87Pc7cRzrp0igATM3nEXQ" alt="" />
+          <img className=" rounded-full w-32 md:w-48" src={profilePic} alt="profile picture" />
         </div>
 
       </div>
