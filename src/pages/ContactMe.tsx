@@ -40,7 +40,7 @@ function ContactMe() {
                             type="text"
                             id="name"
                             name="name"
-                            className="w-full bg-black bg-opacity-20 rounded  text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            className="w-full bg-white bg-opacity-20 rounded  text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                             onChange={(e) => setName(e.target.value)}
                         />
                     </div>
@@ -52,7 +52,7 @@ function ContactMe() {
                             type="email"
                             id="email"
                             name="email"
-                            className="w-full bg-black bg-opacity-20 rounded  text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            className="w-full bg-white bg-opacity-20 rounded  text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                             onChange={(e) => setEmail(e.target.value)}
                         />
                     </div>
@@ -65,13 +65,13 @@ function ContactMe() {
                         <textarea
                             id="message"
                             name="message"
-                            className="w-full bg-black bg-opacity-20 rounded text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            className="w-full bg-white bg-opacity-20 rounded text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                             onChange={(e) => setMessage(e.target.value)}
                         />
                     </div>
                     <button
                         type="submit"
-                        className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                        className="text-white p-2 bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-800 hover:to-blue-800 rounded text-lg">
                         Submit
                     </button>
                 </form>

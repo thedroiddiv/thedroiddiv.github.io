@@ -17,7 +17,7 @@ function Navbar({ history }: Props) {
     <header className={`flex justify-between items-center `}>
       <Link
         to={`/`}
-        className="text-4xl font-Poppins font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500  cursor-pointer"
+        className="text-2xl md:text-4xl font-Poppins font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500  cursor-pointer"
       >
         div.dxn
       </Link>
@@ -37,7 +37,7 @@ function Navbar({ history }: Props) {
           </NavLink>
         </ul>
         <div className="flex md:hidden flex-1 justify-end">
-          <FaHamburger size="30" />
+          <FaHamburger />
         </div>
       </nav>
 

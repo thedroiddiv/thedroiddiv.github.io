@@ -21,7 +21,7 @@ function App() {
         style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/bgblue.jpg"})` }}>
 
         {/* glass pannel */}
-        <div className="p-5 md:p-10 bg-fixed bg-gray-900 text-white rounded-3xl min-h-full backdrop-filter backdrop-blur bg-opacity-20 " >
+        <div className="p-5 md:p-10 bg-fixed bg-gray-900 text-white rounded-3xl min-h-full backdrop-filter backdrop-blur bg-opacity-40 " >
 
           {/* main content */}
           <Navbar />
