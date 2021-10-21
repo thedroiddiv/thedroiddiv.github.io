@@ -21,13 +21,7 @@ export const projects : Project[] = [
     {
         title : "MLKit-Analyzer",
         desc:"A simple application based on Google MLKit",
-        link:"https://shoponn.herokuapp.com/",
-        image:"https://raw.githubusercontent.com/divyansh-dxn/Shoponn/master/samples/img_1.png"   
+        link:"https://github.com/divyansh-dxn/MLKit-Analyzer",
+        image:""   
     },
-    {
-        title : "Shoponn",
-        desc:"A simple online shopping website with different versions for users and admin",
-        link:"https://shoponn.herokuapp.com/",
-        image:"https://raw.githubusercontent.com/divyansh-dxn/Shoponn/master/samples/img_1.png"   
-    }
 ]
