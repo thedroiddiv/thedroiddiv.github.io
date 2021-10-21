@@ -13,16 +13,7 @@ function ContactMe() {
       exit={{}}
       transition={{ duration: 0.3 }}
     >
-      <div className="md:grid md:grid-cols-3 w-full p-10 md:space-x-10 ">
-
-        <div className="rounded-lg overflow-hidden bg-black bg-opacity-20">
-          <iframe
-            className="w-full h-full"
-            title="Location"
-            src="https://www.google.com/maps/embed/v1/place?q=iiit+naya+raipur&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-          ></iframe>
-        </div>
-
+      <div className="md:grid md:grid-cols-3 w-full p-10 md:space-x-10 space-y-10">
         <div className="p-10">
           <h2 className="text-xl text-white font-medium ">Divyansh Kushwaha</h2>
           <p className="text-sm">
@@ -41,7 +32,7 @@ function ContactMe() {
           </p>
         </div>
 
-        <form name="contact" className="flex flex-col lg:w-96 lg:h-96">
+        <form name="contact" className="flex flex-col">
           <div className="mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
               Name
@@ -67,10 +58,7 @@ function ContactMe() {
             />
           </div>
           <div className="mb-4">
-            <label
-              htmlFor="message"
-              className="text-sm text-gray-400"
-            >
+            <label htmlFor="message" className="text-sm text-gray-400">
               Message
             </label>
             <textarea
@@ -87,6 +75,14 @@ function ContactMe() {
             Submit
           </button>
         </form>
+
+        <div className="rounded-lg overflow-hidden bg-black bg-opacity-20">
+          <iframe
+            className="w-full h-full"
+            title="Location"
+            src="https://www.google.com/maps/embed/v1/place?q=iiit+naya+raipur&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+          ></iframe>
+        </div>
       </div>
     </motion.div>
   );
