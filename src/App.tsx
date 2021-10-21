@@ -1,34 +1,47 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { Route, Switch, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
+import { AnimatePresence } from 'framer-motion'
+import FloatingBubbles from './components/FloatingBubbles';
 
 function App() {
 
-  const bgImg = ((Date.now() & 1) != 1) ? "/bgblue.jpg" : "/bgblue.jpg"
-  console.log(bgImg);
+  const loc = useLocation();
 
   return (
-    <div className="min-h-screen p-10 sm:p-10 md:p-20 lg:p-20 flex flex-col justify-center items-center bg-fixed bg-no-repeat bg-cover"
-      style={{ backgroundImage: `url(${bgImg})` }}>
 
-      <div className="p-10 sm:p-10 bg-fixed bg-black text-white rounded-3xl 
-        bg-clip-padding bg-opacity-20 shadow-md " style={{ backdropFilter: "blur(20px)", minHeight: "70vh", minWidth: "100%" }}>
+    <div id="main" className=" overflow-hidden max-h-screen">
+      <FloatingBubbles />
 
-        <BrowserRouter>
+
+      <div className="h-screen p-10 overflow-auto bg-fixed bg-no-repeat bg-cover"
+        style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/bgblue.jpg"})` }}>
+
+        {/* glass pannel */}
+        <div className="p-5 md:p-10 bg-fixed bg-gray-900 text-white rounded-3xl min-h-full backdrop-filter backdrop-blur bg-opacity-20 " >
+
+          {/* main content */}
           <Navbar />
-          <Switch>
-            <Route path="/" exact component={About} />
-            <Route path="/skills" exact component={Skills} />
-            <Route path="/projects" exact component={Projects} />
-            <Route path="/contact" exact component={Projects} />
-          </Switch>
-        </BrowserRouter>
+          <div className="srcoll flex items-center justify-center" style={{ minHeight: "75vh" }}>
+            <AnimatePresence exitBeforeEnter initial={false}>
+              <Switch location={loc} key={loc.pathname}>
+                <Route path="/" exact component={About} />
+                <Route path="/skills" exact component={Skills} />
+                <Route path="/projects" exact component={Projects} />
+                <Route path="/contact" exact component={Projects} />
+              </Switch>
+            </AnimatePresence>
+          </div>
+          {/* main content */}
+
+        </div>
+        {/* glass pannel */}
 
       </div>
-
     </div>
+
   );
 }
 

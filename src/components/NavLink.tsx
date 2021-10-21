@@ -9,7 +9,7 @@ interface NavLinkProps {
 
 function NavLink({ to, className, children }: NavLinkProps) {
     return (
-        <Link to={to} className={`${className} cursor-pointer`} style={{ textDecoration: "none" }}>
+        <Link to={to} className={`${className} cursor-pointer`}>
             {children}
         </Link>
     )

@@ -1,8 +1,6 @@
-import React from "react";
 import { FaHtml5,FaJava,FaReact,FaNodeJs } from 'react-icons/fa'
 import {SiJavascript,SiTypescript,SiCss3,SiExpress ,SiKotlin,SiMongodb,SiFirebase,SiGoland} from 'react-icons/si'
 import {AiFillAndroid} from 'react-icons/ai'
-import {GrGolang} from 'react-icons/gr'
 
 export interface Skill {
     name: string;
