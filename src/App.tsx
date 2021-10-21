@@ -5,6 +5,7 @@ import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import { AnimatePresence } from 'framer-motion'
 import FloatingBubbles from './components/FloatingBubbles';
+import ContactMe from './pages/ContactMe';
 
 function App() {
 
@@ -30,7 +31,7 @@ function App() {
                 <Route path="/" exact component={About} />
                 <Route path="/skills" exact component={Skills} />
                 <Route path="/projects" exact component={Projects} />
-                <Route path="/contact" exact component={Projects} />
+                <Route path="/contact" exact component={ContactMe} />
               </Switch>
             </AnimatePresence>
           </div>
