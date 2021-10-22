@@ -1,10 +1,19 @@
-import { useState } from "react";
+import { SyntheticEvent, useState } from "react";
 import { motion } from "framer-motion";
 
 function ContactMe() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  const handleSubmit = (e:any) => {
+    e.preventDefault() 
+    setTimeout( () => {
+      setName("");
+      setEmail("");
+      setMessage("");
+    },1000)   
+  };
 
   return (
     <motion.div
@@ -41,6 +50,7 @@ function ContactMe() {
               type="text"
               id="name"
               name="name"
+              value={name}
               className="w-full bg-white bg-opacity-20 rounded  text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={(e) => setName(e.target.value)}
             />
@@ -53,6 +63,7 @@ function ContactMe() {
               type="email"
               id="email"
               name="email"
+              value={email}
               className="w-full bg-white bg-opacity-20 rounded  text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -64,12 +75,13 @@ function ContactMe() {
             <textarea
               id="message"
               name="message"
+              value={message}
               className="w-full bg-white bg-opacity-20 rounded text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
           <button
-            type="submit"
+            onClick={handleSubmit}
             className="text-white p-2 bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-800 hover:to-blue-800 rounded text-lg"
           >
             Submit

@@ -13,8 +13,8 @@ function Projects() {
     >
       <div className="p-2 grid md:grid-cols-2 lg:grid-cols-3 ">
         {projects.map((project, i) => (
-          <a target="blank" href={project.link}>
-            <div key={i} className="my-2 mx-2 rounded-md overflow-hidden bg-black bg-opacity-20">
+          <a key={i} target="blank" href={project.link}>
+            <div className="my-2 mx-2 rounded-md overflow-hidden bg-black bg-opacity-20">
               <div className="flip-card w-60 h-60">
                 <div className="flip  w-full h-full relative ">
                   <div className="front absolute w-full h-full flex flex-col justify-center items-center text-center">
