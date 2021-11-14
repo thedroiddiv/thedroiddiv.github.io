@@ -1,8 +1,13 @@
 import { motion } from "framer-motion";
-import { projects } from "../data/models/projects";
+import { useState } from "react";
+import { getProjects } from "../data/Firebase";
+import Project from "../data/models/project";
 
 function Projects() {
-  const p = [1, 5, 7, 8, 2, 8, 7, 7, 7];
+
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  getProjects().then((p) => setProjects(p));
 
   return (
     <motion.div

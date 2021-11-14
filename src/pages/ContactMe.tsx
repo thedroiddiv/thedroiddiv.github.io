@@ -1,4 +1,4 @@
-import { SyntheticEvent, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 function ContactMe() {
@@ -6,13 +6,13 @@ function ContactMe() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e:any) => {
-    e.preventDefault() 
-    setTimeout( () => {
+  const handleSubmit = (e: any) => {
+    e.preventDefault()
+    setTimeout(() => {
       setName("");
       setEmail("");
       setMessage("");
-    },1000)   
+    }, 1000)
   };
 
   return (
