@@ -31,7 +31,7 @@
   },
   "homepage": "./",
   "scripts": {
-    "start": "craco  --openssl-legacy-provider start",
+    "start": "craco start",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
