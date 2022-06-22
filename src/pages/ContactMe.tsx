@@ -26,7 +26,7 @@ function ContactMe() {
         <div className="p-10">
           <h2 className="text-xl text-white font-medium ">Divyansh Kushwaha</h2>
           <p className="text-sm">
-            Bhabha House, IIIT Naya Raipur Sector 24, Naya Raipur, Chhattisgarh
+            Ramanujan House, IIIT Naya Raipur Sector 24, Naya Raipur, Chhattisgarh
             493661 <br /> INDIA
           </p>
           <br />
