@@ -1,6 +1,6 @@
 import NavLink from "./NavLink";
 import { Link, withRouter } from "react-router-dom";
-import { FaHamburger, FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaHamburger, FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 import { History } from "history";
 import { SyntheticEvent, useState } from "react";
 
@@ -66,6 +66,9 @@ function Navbar({ history }: Props) {
         </a>
         <a target="blank" href="https://www.instagram.com/divyansh.dxn">
           <FaInstagram />
+        </a>
+        <a target="blank" href="https://www.twitter.com/divyanshdxn">
+          <FaTwitter />
         </a>
       </div>
     </header>

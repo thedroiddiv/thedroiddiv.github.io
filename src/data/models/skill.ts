@@ -1,44 +1,12 @@
 import { FaHtml5,FaJava,FaReact,FaNodeJs } from 'react-icons/fa'
 import {SiJavascript,SiTypescript,SiCss3,SiExpress ,SiKotlin,SiMongodb,SiFirebase,SiGoland} from 'react-icons/si'
 import {AiFillAndroid} from 'react-icons/ai'
-// import {
-//     QueryDocumentSnapshot,
-//     SnapshotOptions,
-//   } from "@firebase/firestore";
 
 export interface Skill {
     name: string;
     url: string;
     icon: any;
 }
-
-// class Skill {
-//     name: string;
-//     url: string;
-//     icon: any;
-//     constructor(name:string,url:string, icon:string)
-//      ----> icon???? it's a problem, figured it out?, text me
-// }
-// const skillConverter = {
-//     toFirestore: (project: Skill) => {
-//       return {
-//         name: project.name,
-//         url: project.url,
-//         icon: project.icon,
-//       };
-//     },
-//     fromFirestore: (
-//       snapshot: QueryDocumentSnapshot,
-//       options: SnapshotOptions
-//     ) => {
-//       const data = snapshot.data(options);
-//       return { 
-//         name: data.name,
-//         url: data.url,
-//         icon: data.icon
-//        };
-//     },
-//   };
 
 export const skills: Skill[] = [
     { name: "Android", url: "https://en.wikipedia.org/wiki/Android_(operating_system)", icon: AiFillAndroid },

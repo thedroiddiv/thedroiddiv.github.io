@@ -1,18 +1,10 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 import ReactLoading from "react-loading";
-import { getProjects } from "../data/Firebase";
-import Project from "../data/models/project";
+import { projectList } from "../data/models/project";
 
 function Projects() {
 
-  const [projects, setProjects] = useState<Project[]>([]);
-  const [isLoading,setLoading] = useState(true);
-
-  getProjects().then((p) => {
-    setProjects(p)
-    setLoading(false)
-  });
+ const projects = projectList;
 
   return (
     <motion.div
@@ -21,7 +13,7 @@ function Projects() {
       exit={{}}
       transition={{ duration: 0.3 }}
     >
-      {isLoading && (
+      {false && (
          <ReactLoading type={"bars"} color="#fff" />
       )}
       <div className="p-2 grid md:grid-cols-2 lg:grid-cols-3 ">
