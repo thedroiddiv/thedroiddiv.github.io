@@ -3,7 +3,7 @@ import { Section } from '../components/Section'
 function About() {
     return (
         <Section title='ABOUT 🧑🏻‍💻 ME'>
-            <div className='flex flex-col items-center justify-center gap-12 mt-24'>
+            <div className='flex flex-col items-center justify-center gap-12 md:mt-24'>
                 <div className="flex mt-4 justify-center rounded-full w-64 h-64">
                     <img className='rounded-full' src="assets/me.jpg" alt="" />
                 </div>
