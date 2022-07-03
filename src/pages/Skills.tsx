@@ -1,26 +1,47 @@
-import Chip from '../components/Chip'
-import { skills } from '../data/models/skill'
-import { motion } from 'framer-motion';
+import React from 'react'
+import { Section } from '../components/Section'
 
+type Skill = {
+    title?: string
+    subtitle?: string
+    desc?: string
+    image?: string
+}
+type Props = {
+    skill: Skill
+}
 
-function Skills() {
+const SkillCard = ({ skill }: Props) => {
+    const { title, subtitle, desc, image } = skill
     return (
-        <motion.div
-            initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            exit={{}}
-            transition={{ duration: 0.3 }}
-        >
-            <div className="flex flex-wrap md:p-10 items-center justify-center ">
-                {skills.map((skill, index) => (
-                    <a className="transform hover:scale-110 duration-100  " key={index} href={skill.url} target="blank">
-                        <Chip className="m-4 space-x-4 " >
-                            <p className="text-xl bg-gradient-to-r hover:text-transparent bg-clip-text  from-pink-500 to-yellow-400">{skill.name}</p>
-                            <skill.icon /></Chip>
-                    </a>
+        <div className="flex flex-col items-center text-center border w-96 p-8">
+            <img src={image} alt="" width={96} />
+            <h3 className="text-2xl font-bold mt-4">{title}</h3>
+            <h5 className="text-xl">{subtitle}</h5>
+            <p>{desc}</p>
+        </div>
+    )
+}
+
+const fakeSkill: Skill = {
+    title: "Android dev",
+    subtitle: "",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, consequuntur.",
+    image: "/skills/android.svg"
+}
+
+const skillList = [fakeSkill, fakeSkill, fakeSkill, fakeSkill, fakeSkill, fakeSkill]
+
+const Skills = () => {
+    return (
+        <Section>
+            <h3 className='text-center text-4xl font-bold'>MY <span className='text-green-600'>SKILLS</span></h3>
+            <div className="flex flex-wrap justify-center gap-4 mt-24">
+                {skillList.map((skill, index) => (
+                    <SkillCard key={index} skill={skill} />
                 ))}
             </div>
-        </motion.div>
+        </Section>
     )
 }
 
