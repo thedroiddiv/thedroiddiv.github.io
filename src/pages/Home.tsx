@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import BIRDS from 'vanta/dist/vanta.net.min';
 import Chip from '../components/Chip';
 import { getRandomJoke, Joke } from '../api/Joke';
+import { useVantaNet } from '../hooks/Vanta';
 
 type HomeState = {
   joke?: Joke
@@ -18,29 +19,7 @@ const Home = () => {
       })
     }).catch(err => console.log(err))
   }, [])
-
-
-  const [vantaEffect, setVantaEffect] = useState(0)
-  const myRef = useRef(null)
-  useEffect(() => {
-    if (!vantaEffect) {
-      setVantaEffect(BIRDS({
-        el: myRef.current,
-        yOffset: 0.20,
-        color: 0x257d5d,
-        backgroundColor: 0x0,
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: true,
-        maxDistance: 18.00
-
-      }))
-    }
-    return () => {
-      // if (vantaEffect) vantaEffect.destroy()
-    }
-  }, [vantaEffect])
-
+  const myRef = useVantaNet()
   return (
     <section ref={myRef} className="min-h-screen text-white text-center p-8 flex flex-col-reverse items-center justify-around md:flex-row md:text-left md:p-24">
       <div className="md:w-1/2">
