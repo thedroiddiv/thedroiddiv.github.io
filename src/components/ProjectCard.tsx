@@ -1,4 +1,4 @@
-import { Project } from "../models/Project"
+import { Project } from "../data/Project"
 import Chip from "./Chip"
 
 type Props = {

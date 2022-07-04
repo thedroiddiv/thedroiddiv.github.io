@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Chip from '../components/Chip';
-import { getRandomJoke, Joke } from '../api/Joke';
+import { getRandomJoke, Joke } from '../data/Joke';
 import { useVantaNet } from '../hooks/Vanta';
 
 type HomeState = {

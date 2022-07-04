@@ -1,6 +1,6 @@
 import { Section } from '../components/Section'
 import { SkillCard } from '../components/SkillCard'
-import { mySkills } from '../models/Skill'
+import { mySkills } from '../data/Skill'
 
 const Skills = () => {
     return (

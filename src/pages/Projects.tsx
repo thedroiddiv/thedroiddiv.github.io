@@ -1,6 +1,6 @@
 import { ProjectCard } from '../components/ProjectCard'
 import { Section } from '../components/Section'
-import { myProjects } from '../models/Project'
+import { myProjects } from '../data/Project'
 
 function Projects() {
   return (

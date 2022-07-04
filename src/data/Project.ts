@@ -20,7 +20,7 @@ export const myProjects : Project[] = [
         platform: "Android App",
         desc: `About
         Notes gives you a quick and simple notepad editing experience when you write notes, memos, e-mails, messages, shopping lists and to-do lists.The app can work both offline as well as online, as the internet gets available to the device ,data gets synced to firestore. Users can login with different google accounts.`,
-        image: "https://picsum.photos/400/200"
+        image: "https://github.com/divyansh-dxn/Notes/raw/master/assets/samples/sample_sm.png"
     },
     {
         title: "Git Repos",
