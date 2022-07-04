@@ -1,5 +1,12 @@
 import ContactForm from '../components/ContactForm';
 import { Section } from '../components/Section';
+import {
+  FaDiscord,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+} from 'react-icons/fa';
 
 function Contact() {
   return (
@@ -21,6 +28,43 @@ function Contact() {
             <br />
             +91-8354931770
           </p>
+          <div className="mt-4 flex gap-4 flex-wrap">
+            <a
+              href="https://www.instagram.com/divyansh.dxn/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <FaInstagram size={24} />
+            </a>
+            <a
+              href="https://www.twitter.com/divyanshdxn/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <FaTwitter size={24} />
+            </a>
+            <a
+              href="https://www.github.com/divyansh-dxn/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <FaDiscord size={24} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/divyanshdxn/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <FaLinkedin size={24} />
+            </a>
+            <a
+              href="https://www.github.com/divyansh-dxn/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <FaGithub size={24} />
+            </a>
+          </div>
         </div>
 
         <div className="w-full md:w-96">
