@@ -1,3 +1,2 @@
-declare module 'vanta/dist/vanta.waves.min';
-declare module 'vanta/dist/vanta.net.min';
-declare module 'react-scroll'
+declare module 'vanta/dist/vanta.globe.min';
+declare module 'react-scroll';
