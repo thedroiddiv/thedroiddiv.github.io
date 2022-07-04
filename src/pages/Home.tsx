@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Chip from '../components/Chip';
 import { getRandomJoke, Joke } from '../data/Joke';
+import { resumeUrl } from '../data/Resume';
 import { useVantaNet } from '../hooks/Vanta';
 
 type HomeState = {
@@ -26,7 +27,7 @@ const Home = () => {
         <h2 className="text-3xl md:text-6xl text-white md:mt-12">I am Divyansh,<br /><span className='font-bold'>an Android Developer</span></h2>
         <p className="mt-3">{joke?.question}</p>
         <p>{joke?.punchline}</p>
-        <Chip className='text-2xl mt-12' text="Download Resume" />
+        <Chip href={resumeUrl} className='text-2xl mt-12' text="Download Resume" />
       </div>
       <div className="w-5/6 md:w-1/2">
         <img src="assets/programmer.svg" alt="" />
