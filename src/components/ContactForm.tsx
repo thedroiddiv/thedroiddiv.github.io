@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Chip from './Chip';
 
 function ContactForm() {
@@ -54,7 +54,7 @@ function ContactForm() {
                     onChange={(e) => setMessage(e.target.value)}
                 />
             </div>
-            <Chip text='Submit'/>
+            <Chip onClick={e => handleSubmit(e)} text='Submit'/>
         </form>
     )
 }

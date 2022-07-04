@@ -4,7 +4,7 @@ import { myProjects } from '../models/Project'
 
 function Projects() {
   return (
-    <Section title='MY 🪲 PROJECTS'>
+    <Section title='MY 🪲 PROJECTS' id='projects'>
       <div className="flex flex-wrap gap-8 justify-center">
         {myProjects.map((project, index) => (
           <ProjectCard project={project} key={index} />

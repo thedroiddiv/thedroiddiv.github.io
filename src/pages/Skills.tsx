@@ -4,7 +4,7 @@ import { mySkills } from '../models/Skill'
 
 const Skills = () => {
     return (
-        <Section title='MY 💪🏻 SKILLS'>
+        <Section title='MY 💪🏻 SKILLS' id='skills'>
             <div className="flex flex-wrap justify-center gap-4 md:mt-24">
                 {mySkills.map((skill, index) => (
                     <SkillCard key={index} skill={skill} />
