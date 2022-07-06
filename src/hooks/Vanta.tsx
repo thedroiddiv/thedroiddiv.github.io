@@ -5,7 +5,7 @@ export const useVantaGlobe = () => {
   const [vantaEffect, setVantaEffect] = useState<any>(0);
   const myRef = useRef(null);
   useEffect(() => {
-    if (!vantaEffect) {
+    if (!vantaEffect && window.innerWidth >= 768) {
       setVantaEffect(
         GLOBE({
           el: myRef.current,

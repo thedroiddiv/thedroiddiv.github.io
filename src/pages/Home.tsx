@@ -47,7 +47,6 @@ const Home = () => {
       </div>
       <div className="w-5/6 md:w-1/2">
         <img
-          className="invisible md:visible"
           src="assets/programmer.svg"
           alt=""
         />
