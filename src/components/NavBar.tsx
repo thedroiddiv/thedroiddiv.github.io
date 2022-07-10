@@ -22,10 +22,8 @@ const NavLink = ({ to, children }: Props) => (
 );
 
 export const NavBar = () => {
-  const [visibility, setVisibility] = useState('hidden');
-  const toggleVisibility = () => {
-    visibility ? setVisibility('') : setVisibility('hidden');
-  };
+  const [isVisible, setVisibility] = useState(false);
+  const toggleVisibility = () => setVisibility(!isVisible);
 
   return (
     <nav
@@ -41,14 +39,14 @@ export const NavBar = () => {
         }}
         id="menu-button"
       >
-        {visibility === 'hidden' ? <HiMenu /> : <AiOutlineClose />}
+        {isVisible ? <HiMenu /> : <AiOutlineClose />}
       </div>
 
       <div
-        className={`${visibility} w-full md:flex flex-wrap justify-between px-8 `}
+        className={`${isVisible ? "h-0" : "h-48"} md:h-5 overflow-hidden w-full md:flex flex-wrap md:justify-between justify-around px-8 transition-all ease-in-out duration-500`}
         id="menu"
       >
-        <ul className="text-base md:flex gap-4 md:justify-between duration-300 ease-out">
+        <ul className="text-base md:flex gap-4 md:justify-between">
           <NavLink to={'home'}>HOME</NavLink>
           <NavLink to={'about'}>ABOUT</NavLink>
           <NavLink to={'skills'}>SKILLS</NavLink>
