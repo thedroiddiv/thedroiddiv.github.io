@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import ReactLoading from 'react-loading';
 import Chip from '../components/Chip';
 import { getRandomJoke, Joke } from '../data/Joke';
 import { resumeUrl } from '../data/Resume';
@@ -10,7 +11,7 @@ type HomeState = {
 };
 
 const Home = () => {
-  const [{ joke }, setUiState] = useState<HomeState>({ loading: true });
+  const [{ joke, loading }, setUiState] = useState<HomeState>({ loading: true });
   useEffect(() => {
     getRandomJoke()
       .then((res) => {
@@ -37,6 +38,9 @@ const Home = () => {
           <br />
           <span className="font-bold">an Android Developer</span>
         </h2>
+        {loading && (
+          <ReactLoading type={"bars"} color="#fff" />
+        )}
         <p className="mt-3">{joke?.question}</p>
         <p>{joke?.punchline}</p>
         <Chip

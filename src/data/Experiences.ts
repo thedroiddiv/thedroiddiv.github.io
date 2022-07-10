@@ -1,5 +1,3 @@
-import Experiences from '../pages/Experiences';
-
 export type Experience = {
   thumbnail: string;
   title: string;
