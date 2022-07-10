@@ -6,5 +6,7 @@
 * Deployed on [github.io](https://divyansh-dxn.github.io/) 🚀
 * Styled using [Tailwind CSS](https://tailwindcss.com) 🎨
 
-### Upcoming Changes 
+### View a live preview [here](https://divyansh-dxn.github.io/) 🔥
+
+# Upcoming Changes 
 * Dark Mode Toggle ✨🌙
