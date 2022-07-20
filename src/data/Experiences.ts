@@ -32,4 +32,12 @@ export const myExperiences: Experience[] = [
     organisation: 'Cureya',
     url: 'https://drive.google.com/file/d/1lZEzYAxTtyCLEzFDdZUwI0gh_9t-YIiS/view',
   },
+  {
+    thumbnail: 'assets/android_intern.svg',
+    title: 'Android Intern',
+    duration: 'Mar 2022 - May 2022',
+    desc: 'Modified open source codebase and improved user experience by enhancing UI of app. Bridged the app to the open source app and enhanced the performance of the app. Provided a feature on the top for profile switching.\nTech Stack: Android, Kotlin, Java, RoomDb, HTML, CSS',
+    organisation: 'Nestor Analytics',
+    url: 'http://www.nestoranalytics.com/home.php',
+  },
 ];

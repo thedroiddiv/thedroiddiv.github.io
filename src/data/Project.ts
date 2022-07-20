@@ -10,7 +10,7 @@ export type Project = {
 export const myProjects: Project[] = [
   {
     title: 'WallpaperX',
-    time: 'July, 2021',
+    time: 'Oct-Dec, 2021',
     platform: 'Android App',
     desc: 'A simple wallpaper application. WallpaperX brings cool and fresh wallpapers just to you from unsplash.com. Set wallpapers for your home and lock screen, download and share.Topics',
     image:
@@ -19,7 +19,7 @@ export const myProjects: Project[] = [
   },
   {
     title: 'Notes',
-    time: 'July, 2021',
+    time: 'Dec, 2021',
     platform: 'Android App',
     desc: `About
         Notes gives you a quick and simple notepad editing experience when you write notes, memos, e-mails, messages, shopping lists and to-do lists.The app can work both offline as well as online, as the internet gets available to the device ,data gets synced to firestore. Users can login with different google accounts.`,
@@ -38,11 +38,20 @@ export const myProjects: Project[] = [
   },
   {
     title: 'Shoponn',
-    time: 'July, 2021',
+    time: 'September, 2021',
     platform: 'Full Stack MERN',
     desc: 'A simple, full-stack and prototype online shopping website built on ExpressJS and ReactJS',
     image:
       'https://github.com/divyansh-dxn/Shoponn/raw/master/samples/sample.jpeg',
     projectUrl: 'https://github.com/divyansh-dxn/shoponn',
+  },
+  {
+    title: 'Social IIITNR',
+    time: 'Jan-Apr, 2022',
+    platform: 'Full Stack MERN',
+    desc: 'Social-IIITNR (InsCon) is a social media platform geared towards solving these problems by connecting the members of the IIIT-NR family. It relies heavily on databases to store, filter search, and retrieve categorized information and provides well-structured interfaces in the form of a WebApp and Android App.',
+    image:
+      'https://github.com/DeepanshuPratik/SocialMedia_IIITNayaRaipur/raw/main/android/SocialIIITNR/app/src/main/res/drawable/website_login.jpeg',
+    projectUrl: 'https://github.com/divyansh-dxn/SocialMedia_IIITNayaRaipur',
   },
 ];
