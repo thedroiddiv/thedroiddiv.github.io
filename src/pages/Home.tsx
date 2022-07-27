@@ -11,7 +11,9 @@ type HomeState = {
 };
 
 const Home = () => {
-  const [{ joke, loading }, setUiState] = useState<HomeState>({ loading: true });
+  const [{ joke, loading }, setUiState] = useState<HomeState>({
+    loading: true,
+  });
   useEffect(() => {
     getRandomJoke()
       .then((res) => {
@@ -38,9 +40,7 @@ const Home = () => {
           <br />
           <span className="font-bold">an Android Developer</span>
         </h2>
-        {loading && (
-          <ReactLoading type={"bars"} color="#fff" />
-        )}
+        {loading && <ReactLoading type={'bars'} color="#fff" />}
         <p className="mt-3">{joke?.question}</p>
         <p>{joke?.punchline}</p>
         <Chip
@@ -50,10 +50,7 @@ const Home = () => {
         />
       </div>
       <div className="w-5/6 md:w-1/2">
-        <img
-          src="assets/programmer.svg"
-          alt=""
-        />
+        <img src="assets/programmer.svg" alt="" />
       </div>
     </section>
   );
