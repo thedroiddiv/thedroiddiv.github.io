@@ -6,7 +6,7 @@
 - Deployed on [github.io](https://divyansh-dxn.github.io/) 🚀
 - Styled using [Tailwind CSS](https://tailwindcss.com) 🎨
 
-### View a live preview [here](https://divyansh-dxn.github.io/) 🔥
+### View a live @ [https://divyansh-dxn.github.io/](https://divyansh-dxn.github.io/) 🔥
 
 # Upcoming Changes
 
