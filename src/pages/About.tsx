@@ -5,7 +5,7 @@ function About() {
     <Section title="ABOUT 🧑🏻‍💻 ME" id="about">
       <div className="flex flex-col items-center justify-center gap-12 md:mt-24">
         <div className="flex mt-4 justify-center rounded-full w-64 h-64">
-          <img className="rounded-full" src="assets/me.png" alt="" />
+          <img className="rounded-lg" src="assets/me.png" alt="" />
         </div>
         <h6 className="text-2xl font-light text-center">
           Hi! I am Divyansh Kushwaha, an Electronics and Communication

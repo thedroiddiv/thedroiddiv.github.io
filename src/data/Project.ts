@@ -41,8 +41,7 @@ export const myProjects: Project[] = [
     time: 'September, 2021',
     platform: 'Full Stack MERN',
     desc: 'A simple, full-stack and prototype online shopping website built on ExpressJS and ReactJS',
-    image:
-      'https://github.com/divyansh-dxn/Shoponn/raw/master/samples/sample.jpeg',
+    image: 'projects/shoponn.png',
     projectUrl: 'https://github.com/divyansh-dxn/shoponn',
   },
   {
@@ -50,8 +49,7 @@ export const myProjects: Project[] = [
     time: 'Jan-Apr, 2022',
     platform: 'Full Stack MERN',
     desc: 'Social-IIITNR (InsCon) is a social media platform geared towards solving these problems by connecting the members of the IIIT-NR family. It relies heavily on databases to store, filter search, and retrieve categorized information and provides well-structured interfaces in the form of a WebApp and Android App.',
-    image:
-      'https://github.com/DeepanshuPratik/SocialMedia_IIITNayaRaipur/raw/main/android/SocialIIITNR/app/src/main/res/drawable/website_login.jpeg',
+    image: 'projects/social_iiitnr.png',
     projectUrl: 'https://github.com/divyansh-dxn/SocialMedia_IIITNayaRaipur',
   },
 ];
