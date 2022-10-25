@@ -9,7 +9,7 @@ export type Skill = {
 export const mySkills: Skill[] = [
   {
     title: 'Android Development',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, consequuntur.',
+    desc: '',
     image: 'assets/android.svg',
     tech: [
       'Java',
@@ -25,14 +25,14 @@ export const mySkills: Skill[] = [
   {
     title: 'Frontend Development',
     subtitle: '',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, consequuntur.',
+    desc: '',
     image: 'assets/frontend.svg',
     tech: ['JavaScript', 'HTML', 'CSS', 'TypeScript', 'ReactJS', 'NodeJS'],
   },
   {
     title: 'Backend Development',
     subtitle: '',
-    desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, consequuntur.',
+    desc: ' ',
     image: 'assets/backend.svg',
     tech: [
       'TypeScript',
