@@ -9,10 +9,18 @@ export type Experience = {
 
 export const myExperiences: Experience[] = [
   {
+    thumbnail: 'assets/karya.svg',
+    title: 'Android Intern',
+    duration: 'Sept 2022 - Present',
+    desc: 'Currently I am working on this project as an Intern through Karya and my contribution varies over a range of bug fixes, feature addition and migration to newer technologies',
+    organisation: 'Karya',
+    url: 'https://github.com/microsoft/rural-crowdsourcing-toolkit-client',
+  },
+  {
     thumbnail: 'assets/gsoc.png',
     title: 'GSoC 2022 Contributor',
-    duration: 'May 2022 - Present',
-    desc: 'I am currently working as a Google Summer of Code contributor at AnkiDroid. My task is to migrate the codebase from AsyncTask (a deprecated api) to Kotlin Coroutines',
+    duration: 'May 2022 - Sept 2022',
+    desc: 'During summer 2022, I worked as a Google Summer of Code contributor at AnkiDroid. My project was to migrate the codebase from AsyncTask (a deprecated api) to Kotlin Coroutines',
     organisation: 'AnkiDroid',
     url: 'https://github.com/AnkiDroid',
   },
