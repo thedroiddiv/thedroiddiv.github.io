@@ -25,7 +25,8 @@
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "npm run build && gh-pages -d build",
-    "prettier": "npx prettier --write ."
+    "prettier": "npx prettier --write .",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -49,7 +50,8 @@
     "@types/react-scroll": "^1.8.3",
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.14",
-    "prettier": "2.7.1",
-    "tailwindcss": "^3.1.4"
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.1.4",
+    "husky": "^8.0.0"
   }
 }
