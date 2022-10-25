@@ -14,7 +14,7 @@ export const myProjects: Project[] = [
     platform: 'Android App',
     desc: 'A simple wallpaper application. WallpaperX brings cool and fresh wallpapers just to you from unsplash.com. Set wallpapers for your home and lock screen, download and share.Topics',
     image:
-      'https://raw.githubusercontent.com/divyansh-dxn/WallpaperX/main/assets/samples/preview_all.jpeg',
+      'https://raw.githubusercontent.com/divyansh-dxn/WallpaperX/master/assets/samples/preview_all.jpeg',
     projectUrl: 'https://github.com/divyansh-dxn/WallpaperX',
   },
   {
