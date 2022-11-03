@@ -9,7 +9,7 @@ function Footer() {
       <p className="text-block text-3xl mt-">Divyansh Kushwaha</p>
       <br />
       <a
-        href="https://github.com/divyansh-dxn/divyansh-dxn.github.io"
+        href="https://github.com/divyanshdxn/divyanshdxn.github.io"
         target="_blank"
         rel="noreferrer"
         className="flex gap-2 items-center hover:text-green-400"
