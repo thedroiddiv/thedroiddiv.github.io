@@ -6,22 +6,34 @@ import Contact from './pages/Contact';
 import Footer from './pages/Footer';
 import { NavBar } from './components/NavBar';
 import Experiences from './pages/Experiences';
+import useDarkMode from './hooks/useDarkMode';
+import { FaMagento } from 'react-icons/fa';
+import ThemeContext from './theme/ThemeContext';
 
 function App() {
+  const [darkMode, setDarkMode] = useDarkMode();
   return (
-    <div
-      className="bg-black text-white bg-fixed"
-      style={{ backgroundImage: 'url(assets/bg_android.png)' }}
-    >
-      <NavBar />
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Experiences />
-      <Contact />
-      <Footer />
-    </div>
+    <ThemeContext.Provider value={
+      {
+        darkMode: darkMode,
+        setDarkMode: setDarkMode
+      }
+    }>
+      <div
+        className="dark:text-white bg-fixed"
+        style={{ backgroundImage: darkMode ? 'url(assets/bg_android.png)' : 'url(assets/bg_android_light.png)'}}
+      >
+        <NavBar />
+        <Home />
+        <About />
+        <Skills />
+        <Projects />
+        <Experiences />
+        <Contact />
+        <Footer />
+      </div>
+    </ThemeContext.Provider>
+
   );
 }
 
