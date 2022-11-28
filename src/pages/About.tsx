@@ -11,7 +11,7 @@ function About() {
           Hi! I am Divyansh Kushwaha, an Electronics and Communication
           Engineering undergraduate at{' '}
           <p className="font-bold">
-            International Institute of Information Technologin, Naya Raipur,
+            International Institute of Information Technology, Naya Raipur,
             INDIA.{' '}
           </p>
           I love exploring new Tech.
