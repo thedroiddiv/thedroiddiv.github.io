@@ -19,7 +19,7 @@ function App() {
       }
     }>
       <div
-        className="dark:text-white transition-all bg-fixed bg-[url(assets/bg_android_light.png)] dark:bg-[url(assets/bg_android.png)]"
+        className="dark:text-white transition-all bg-fixed bg-[url(bg_android_light.png)] dark:bg-[url(bg_android.png)]"
       >
         <NavBar />
         <Home />
