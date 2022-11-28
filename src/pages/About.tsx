@@ -14,7 +14,7 @@ function About() {
             International Institute of Information Technology, Naya Raipur,
             INDIA.{' '}
           </p>
-          I love exploring new Tech.
+          I am an open-source contributor and love exploring new techlologies.
         </h6>
       </div>
     </Section>

@@ -6,6 +6,7 @@ import {
   FaLinkedin,
   FaTwitter,
 } from 'react-icons/fa';
+import {BsMedium} from 'react-icons/bs'
 
 type Props = {
   href: string;
@@ -38,6 +39,9 @@ export const SocialHandles = () => (
     </SocialLink>
     <SocialLink href="https://www.github.com/divyanshdxn/">
       <FaGithub size={24} />
+    </SocialLink>
+    <SocialLink href="https://medium.com/@divyanshdxn">
+      <BsMedium size={24} />
     </SocialLink>
   </div>
 );

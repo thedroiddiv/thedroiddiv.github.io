@@ -34,12 +34,12 @@ const Home = () => {
     >
       <div className="md:w-1/2 backdrop-blur rounded-lg md:backdrop-blur-none rounded-lg p-4 m-2">
         <h4 className="text-3xl md:text-5xl font-bold text-green-500">
-          HI THERE!
+          HI THERE⚡️
         </h4>
         <h2 className="text-3xl md:text-6xl md:mt-12">
           I am Divyansh,
           <br />
-          <span className="font-bold">an Android Developer</span>
+          <span className="font-bold">an Android Developer 👨🏻‍💻</span>
         </h2>
         {loading && <ReactLoading type={'bars'} color="#fff" />}
         <p className="mt-3">{joke?.question}</p>
