@@ -7,7 +7,6 @@ import Footer from './pages/Footer';
 import { NavBar } from './components/NavBar';
 import Experiences from './pages/Experiences';
 import useDarkMode from './hooks/useDarkMode';
-import { FaMagento } from 'react-icons/fa';
 import ThemeContext from './theme/ThemeContext';
 
 function App() {
@@ -20,8 +19,7 @@ function App() {
       }
     }>
       <div
-        className="dark:text-white bg-fixed"
-        style={{ backgroundImage: darkMode ? 'url(assets/bg_android.png)' : 'url(assets/bg_android_light.png)'}}
+        className="dark:text-white transition-all bg-fixed bg-[url(assets/bg_android_light.png)] dark:bg-[url(assets/bg_android.png)]"
       >
         <NavBar />
         <Home />

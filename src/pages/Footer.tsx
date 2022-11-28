@@ -3,7 +3,7 @@ import { FaGithub } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <div className="w-screen flex flex-col text-center items-center text-gray-400 iiems-center py-24">
+    <div className="flex flex-col text-center items-center text-gray-400 iiems-center py-24">
       <h2 className="italic">Designed and Developed by</h2>
       {/* <hr className='w-96' /> */}
       <p className="text-block text-3xl mt-">Divyansh Kushwaha</p>
