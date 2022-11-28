@@ -24,14 +24,14 @@ export const myExperiences: Experience[] = [
     organisation: 'AnkiDroid',
     url: 'https://github.com/AnkiDroid',
   },
-  {
-    thumbnail: 'assets/pull_request.svg',
-    title: 'Open Source Contributor',
-    duration: 'Feb 2022 - Present',
-    desc: 'I stated my open-source contributor journey in February 2022. Click below to view my contributions.',
-    organisation: 'Github',
-    url: 'https://github.com/pulls?q=is%3Apr+author%3Adivyansh-dxn+archived%3Afalse+',
-  },
+  // {
+  //   thumbnail: 'assets/pull_request.svg',
+  //   title: 'Open Source Contributor',
+  //   duration: 'Feb 2022 - Present',
+  //   desc: 'I stated my open-source contributor journey in February 2022. Click below to view my contributions.',
+  //   organisation: 'Github',
+  //   url: 'https://github.com/pulls?q=is%3Apr+author%3Adivyansh-dxn+archived%3Afalse+',
+  // },
   {
     thumbnail: 'assets/android_intern.svg',
     title: 'Android Intern',

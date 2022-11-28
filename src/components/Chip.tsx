@@ -13,7 +13,7 @@ const Chip = ({ text, children, className, onClick, href }: Props) => {
     <a href={href} rel="noreferrer" target="_blank">
       <button
         onClick={(e) => onClick && onClick(e)}
-        className={`${className} px-4 py-2 border border-green-600 rounded-full dark:hover:bg-green-600 hover:bg-green-400 transition mt-4`}
+        className={`${className} px-4 py-2 border border-green-600 rounded-full dark:hover:bg-green-600 hover:bg-green-400 transition`}
       >
         {text}
         {children}

@@ -27,7 +27,7 @@ const NavLink = ({ to, children }: Props) => (
 export const NavBar = () => {
   const [isVisible, setVisibility] = useState(false);
   const toggleVisibility = () => setVisibility(!isVisible);
-  const { darkMode, setDarkMode } = useContext(ThemeContext)
+  const { darkMode, setDarkMode } = useContext(ThemeContext);
   return (
     <nav
       className={`
@@ -46,8 +46,9 @@ export const NavBar = () => {
       </div>
 
       <div
-        className={`${isVisible ? 'h-48' : 'h-0'
-          } md:h-6 overflow-hidden w-full md:flex flex-wrap md:justify-between justify-between px-8 transition-all md:transition-none ease-in-out`}
+        className={`${
+          isVisible ? 'h-48' : 'h-0'
+        } md:h-6 overflow-hidden w-full md:flex flex-wrap md:justify-between justify-between px-8 transition-all md:transition-none ease-in-out`}
         id="menu"
       >
         <ul className="text-base md:flex gap-4 md:justify-between">
@@ -60,7 +61,15 @@ export const NavBar = () => {
         </ul>
         <SocialHandles />
       </div>
-      <div className='cursor-pointer' onClick={e => { setDarkMode(!darkMode) }}> {!darkMode ? <FaMoon size={24}/> : <FaSun size={24}/>}</div>
+      <div
+        className="cursor-pointer"
+        onClick={(e) => {
+          setDarkMode(!darkMode);
+        }}
+      >
+        {' '}
+        {!darkMode ? <FaMoon size={24} /> : <FaSun size={24} />}
+      </div>
     </nav>
   );
 };

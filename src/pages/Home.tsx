@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import ReactLoading from 'react-loading';
+import { Button } from 'react-scroll';
 import Chip from '../components/Chip';
 import { getRandomJoke, Joke } from '../data/Joke';
 import { resumeUrl } from '../data/Resume';
@@ -43,11 +44,17 @@ const Home = () => {
         {loading && <ReactLoading type={'bars'} color="#fff" />}
         <p className="mt-3">{joke?.question}</p>
         <p>{joke?.punchline}</p>
-        <Chip
-          href={resumeUrl}
-          className="text-2xl mt-12"
-          text="Download Resume"
-        />
+        <div className="flex mt-12">
+          <Chip href={resumeUrl} className="text-2xl" text="Download Resume" />
+          <a
+            className="px-4 py-2 bg-green-400 dark:bg-green-600 border border-green-600 rounded-full text-2xl mx-4"
+            href="https://github.com/pulls?q=is%3Apr+author%3Adivyanshdxn+archived%3Afalse+"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open Source
+          </a>
+        </div>
       </div>
       <div className="w-5/6 md:w-1/2">
         <img src="assets/programmer.svg" alt="" />

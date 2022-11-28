@@ -30,9 +30,9 @@ export const SocialHandles = () => (
     <SocialLink href="https://www.twitter.com/divyanshdxn/">
       <FaTwitter size={24} />
     </SocialLink>
-    { /** <SocialLink href="https://www.github.com/divyanshdxn//">
+    {/** <SocialLink href="https://www.github.com/divyanshdxn//">
       <FaDiscord size={24} />
-    </SocialLink> */ }
+    </SocialLink> */}
     <SocialLink href="https://www.linkedin.com/in/divyanshdxn/">
       <FaLinkedin size={24} />
     </SocialLink>
