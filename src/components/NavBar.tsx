@@ -14,7 +14,7 @@ interface Props {
 
 const NavLink = ({ to, children }: Props) => (
   <Link
-    className={`block hover:text-green-400 transition cursor-pointer`}
+    className={`block dark:hover:text-green-400 hover:text-green-600 transition cursor-pointer`}
     activeClass="active"
     smooth
     spy

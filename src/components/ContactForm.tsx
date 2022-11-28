@@ -17,7 +17,7 @@ function ContactForm() {
   return (
     <form name="contact" className="flex flex-col">
       <div className="mb-4">
-        <label htmlFor="name" className="leading-7 text-sm text-gray-400">
+        <label htmlFor="name" className="text-sm dark:text-gray-400">
           Name
         </label>
         <input
@@ -25,12 +25,12 @@ function ContactForm() {
           id="name"
           name="name"
           value={name}
-          className="w-full bg-white rounded bg-opacity-10 text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          className="w-full bg-black dark:bg-white bg-opacity-10 dark:bg-opacity-10 rounded py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           onChange={(e) => setName(e.target.value)}
         />
       </div>
       <div className="mb-4">
-        <label htmlFor="email" className="leading-7 text-sm text-gray-400">
+        <label htmlFor="email" className="text-sm dark:text-gray-400">
           Email
         </label>
         <input
@@ -38,19 +38,19 @@ function ContactForm() {
           id="email"
           name="email"
           value={email}
-          className="w-full bg-white bg-opacity-10 rounded  text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          className="w-full bg-black dark:bg-white bg-opacity-10 dark:bg-opacity-10 rounded py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           onChange={(e) => setEmail(e.target.value)}
         />
       </div>
       <div className="mb-4">
-        <label htmlFor="message" className="text-sm text-gray-400">
+        <label htmlFor="message" className="text-sm dark:text-gray-400">
           Message
         </label>
         <textarea
           id="message"
           name="message"
           value={message}
-          className="w-full bg-white bg-opacity-10 rounded text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          className="w-full bg-black dark:bg-white bg-opacity-10 dark:bg-opacity-10 rounded py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           onChange={(e) => setMessage(e.target.value)}
         />
       </div>
