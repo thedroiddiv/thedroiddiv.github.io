@@ -31,23 +31,23 @@ export const NavBar = () => {
   return (
     <nav
       className={`
-        sticky top-0 z-40 w-full backdrop-blur transition-all ease-out duration-500 duration-500 p-4
+        sticky top-0 z-40 w-full backdrop-blur transition-all md:transition-none ease-in-out p-4 flex
         supports-backdrop-blur:bg-white/95`}
       style={{ backdropFilter: 'blur(20px)' }}
     >
       <div
-        className={`md:hidden`}
+        className={`md:hidden cursor-pointer`}
         onClick={(_e) => {
           toggleVisibility();
         }}
         id="menu-button"
       >
-        {isVisible ? <AiOutlineClose /> : <HiMenu />}
+        {isVisible ? <AiOutlineClose size={24} /> : <HiMenu size={24} />}
       </div>
 
       <div
         className={`${isVisible ? 'h-48' : 'h-0'
-          } md:h-6 overflow-hidden w-full md:flex flex-wrap md:justify-between justify-between px-8 transition-all ease-in-out duration-500`}
+          } md:h-6 overflow-hidden w-full md:flex flex-wrap md:justify-between justify-between px-8 transition-all md:transition-none ease-in-out`}
         id="menu"
       >
         <ul className="text-base md:flex gap-4 md:justify-between">
@@ -58,12 +58,9 @@ export const NavBar = () => {
           <NavLink to={'experiences'}>EXPERIENCES</NavLink>
           <NavLink to={'contact'}>CONTACT ME</NavLink>
         </ul>
-        <div className='flex'>
-          <SocialHandles />
-          <button onClick={e => { setDarkMode(!darkMode) }}> {!darkMode ? <FaMoon /> : <FaSun />}</button>
-        </div>
-
+        <SocialHandles />
       </div>
+      <div className='cursor-pointer' onClick={e => { setDarkMode(!darkMode) }}> {!darkMode ? <FaMoon size={24}/> : <FaSun size={24}/>}</div>
     </nav>
   );
 };

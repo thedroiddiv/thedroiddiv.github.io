@@ -24,10 +24,10 @@ const Home = () => {
       })
       .catch((err) => console.log(err));
   }, []);
-  const myRef = useVantaGlobe();
+  //const myRef = useVantaGlobe();
   return (
     <section
-      ref={myRef}
+      //ref={myRef}
       className="md:min-h-screen flex flex-col-reverse items-center justify-around md:flex-row md:text-left md:p-24"
       id="home"
     >
@@ -35,7 +35,7 @@ const Home = () => {
         <h4 className="text-3xl md:text-5xl font-bold text-green-500">
           HI THERE!
         </h4>
-        <h2 className="text-3xl md:text-6xl text-white md:mt-12">
+        <h2 className="text-3xl md:text-6xl md:mt-12">
           I am Divyansh,
           <br />
           <span className="font-bold">an Android Developer</span>
