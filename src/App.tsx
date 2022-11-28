@@ -12,15 +12,13 @@ import ThemeContext from './theme/ThemeContext';
 function App() {
   const [darkMode, setDarkMode] = useDarkMode();
   return (
-    <ThemeContext.Provider value={
-      {
+    <ThemeContext.Provider
+      value={{
         darkMode: darkMode,
-        setDarkMode: setDarkMode
-      }
-    }>
-      <div
-        className="dark:text-white transition-all bg-fixed bg-[url(bg_android_light.png)] dark:bg-[url(bg_android.png)]"
-      >
+        setDarkMode: setDarkMode,
+      }}
+    >
+      <div className="dark:text-white transition-all bg-fixed bg-[url(bg_android_light.png)] dark:bg-[url(bg_android.png)]">
         <NavBar />
         <Home />
         <About />
@@ -31,7 +29,6 @@ function App() {
         <Footer />
       </div>
     </ThemeContext.Provider>
-
   );
 }
 
