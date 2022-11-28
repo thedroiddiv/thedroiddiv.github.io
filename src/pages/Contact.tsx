@@ -7,7 +7,7 @@ function Contact() {
     <Section title="CONTACT 📱 ME" id="contact">
       <div className="flex flex-col items-center md:flex-row justify-center gap-16 flex-wrap">
         <div className="md:w-64 w-full flex-col items-center">
-          <h2 className="text-xl text-white font-medium ">Divyansh Kushwaha</h2>
+          <h2 className="text-xl font-medium ">Divyansh Kushwaha</h2>
           <p className="text-sm">
             Ramanujan House, IIIT Naya Raipur Sector 24, Naya Raipur,
             Chhattisgarh 493661 <br /> INDIA
