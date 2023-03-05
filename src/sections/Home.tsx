@@ -13,7 +13,7 @@ export const Home = () => {
                     <p className="text-xl font-semibold">I am an Android Developer</p>
                     <p className="text-sm text-gray-400 font-light">I’m an Android Developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building an awesome platform for rural employment in India at Karya Inc.</p>
                 </div>
-                <div className="flex flex-row gap-4">
+                <div className="flex flex-col md:flex-row gap-4">
                     <a href=""><button className="border px-4 py-2">Resume</button></a>
                     <a href=""><button className="border bg-white text-zinc-950 px-4 py-2">Open Source</button></a>
                 </div>
