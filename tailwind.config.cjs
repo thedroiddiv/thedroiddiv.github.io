@@ -7,6 +7,11 @@ module.exports = {
       transitionProperty: {
         height: 'height',
       },
+      colors: {
+        zinc: {
+          950: '#0F0F12',
+        },
+      }
     },
   },
   plugins: [],
