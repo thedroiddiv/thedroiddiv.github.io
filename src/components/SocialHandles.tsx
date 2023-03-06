@@ -6,7 +6,7 @@ import {
   FaLinkedin,
   FaTwitter,
 } from 'react-icons/fa';
-import {BsMedium} from 'react-icons/bs'
+import { BsMedium } from 'react-icons/bs';
 
 type Props = {
   href: string;

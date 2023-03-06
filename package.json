@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "./",
+  "homepage": "./gray",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -16,6 +16,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
     "react-loading": "^2.0.3",
+    "react-router-dom": "^6.8.2",
     "react-scroll": "^1.8.8",
     "vanta": "^0.5.24"
   },

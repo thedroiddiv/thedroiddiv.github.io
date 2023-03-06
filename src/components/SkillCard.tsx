@@ -19,7 +19,7 @@ export const SkillCard = ({ skill }: Props) => {
       <p>{desc}</p>
       <div className="flex flex-wrap gap-2 justify-center">
         {skill.tech?.map((t, i) => (
-          <Chip className='mt-4' key={i} text={t} />
+          <Chip className="mt-4" key={i} text={t} />
         ))}
       </div>
     </div>

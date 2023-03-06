@@ -1,42 +1,50 @@
 import React, { ReactNode } from 'react';
 import { BiServer, DiAndroid, FaReact } from 'react-icons/all';
 
-
 export const Skills = () => {
-  return <section id={`section`} className={`p-8 md:p-16`}>
-    <h4 className={`text-4xl font-bold text-center md:text-left`}>Technologies I have worked with </h4>
-    <div className={`flex flex-row flex-wrap gap-16 items-center justify-around  mt-16`}>
-      <SkillCard>
-        <div className={`p-8`}>
-          <DiAndroid size={48} className={`text-zinc-900`}/>
-          <p className={`font-semibold mt-8`}>Android Development</p>
-          <p className={`mt-4  font-extralight text-sm `}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-            do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
-        </div>
-      </SkillCard>
+  return (
+    <section id={`section`} className={`p-8 md:p-16`}>
+      <h4 className={`text-4xl font-bold text-center md:text-left`}>
+        Technologies I have worked with{' '}
+      </h4>
+      <div
+        className={`flex flex-row flex-wrap gap-16 items-center justify-around  mt-16`}
+      >
+        <SkillCard>
+          <div className={`p-8`}>
+            <DiAndroid size={48} className={`text-zinc-900`} />
+            <p className={`font-semibold mt-8`}>Android Development</p>
+            <p className={`mt-4  font-extralight text-sm `}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </SkillCard>
 
-      <SkillCard>
-        <div className={`p-8`}>
-          <FaReact size={48} className={`text-zinc-900`}/>
-          <p className={`font-semibold mt-8`}>Frontend Development</p>
-          <p className={`mt-4  font-extralight text-sm `}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-            do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
-        </div>
-      </SkillCard>
+        <SkillCard>
+          <div className={`p-8`}>
+            <FaReact size={48} className={`text-zinc-900`} />
+            <p className={`font-semibold mt-8`}>Frontend Development</p>
+            <p className={`mt-4  font-extralight text-sm `}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </SkillCard>
 
-      <SkillCard>
-        <div className={`p-8`}>
-          <BiServer size={48} className={`text-zinc-900`}/>
-          <p className={`font-semibold mt-8`}>Backend Development</p>
-          <p className={`mt-4  font-extralight text-sm `}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-            do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
-        </div>
-      </SkillCard>
-    </div>
-  </section>;
+        <SkillCard>
+          <div className={`p-8`}>
+            <BiServer size={48} className={`text-zinc-900`} />
+            <p className={`font-semibold mt-8`}>Backend Development</p>
+            <p className={`mt-4  font-extralight text-sm `}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </SkillCard>
+      </div>
+    </section>
+  );
 };
 
 const SkillCard = ({ children }: { children: ReactNode }) => {
@@ -60,7 +68,7 @@ const SkillCard = ({ children }: { children: ReactNode }) => {
           before:ease-in-out
           `}
     >
-      <div className='w-16 h-16 rounded-full -top-16 -left-16 -z-10 bg-yellow-600 absolute'></div>
+      <div className="w-16 h-16 rounded-full -top-16 -left-16 -z-10 bg-yellow-600 absolute"></div>
       {/* Actual Content */}
       {children}
     </div>

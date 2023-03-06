@@ -4,10 +4,14 @@ export const About = () => {
       <div className="flex flex flex-col md:flex-row md:gap-12 items-center">
         <div className="md:w-1/3 flex flex-col items-center gap-12">
           <img src="assets/me.png" className="w-64 rounded-full" alt="" />
-          <p className="text-2xl invisible md:visible font-semibild">Divyansh Kushwaha</p>
+          <p className="text-2xl invisible md:visible font-semibild">
+            Divyansh Kushwaha
+          </p>
         </div>
         <div className="md:w-2/3 flex flex-col gap-6 md:p-12">
-          <p className="text-4xl font-bold text-center md:text-left">About Me</p>
+          <p className="text-4xl font-bold text-center md:text-left">
+            About Me
+          </p>
           <p className="text-gray-400 text-justify md:text-left">
             Hello, I'm Divyansh, a passionate and self-driven Native Android
             Developer currently pursuing Bachelor of Technology in Electronics

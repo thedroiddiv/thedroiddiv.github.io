@@ -1,17 +1,15 @@
-import Ellipse from '../svgs/ellipse.svg';
 import { About } from './About';
 import { Home } from './Home';
 import { Skills } from './Skills';
+import { ExperienceSection } from './Experience';
 
-
-const App = () => {
+export const GrayApp = () => {
   return (
     <div className={`bg-zinc-950 text-white`}>
-      <Home/>
-      <About/>
-      <Skills/>
+      <Home />
+      <About />
+      <Skills />
+      <ExperienceSection />
     </div>
   );
 };
-
-export default App;
