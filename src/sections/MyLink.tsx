@@ -22,16 +22,18 @@ interface Props {
     | 'none';
   href: string;
   children?: string;
+
+  size ?: number
 }
 
-export const MyLink = ({ className, type, href, children }: Props) => {
+export const MyLink = ({ className, type, href, children, size }: Props) => {
   const Anchor = ({ children }: { children: ReactNode }) => {
     return (
       <a
         href={href}
         rel="noreferrer"
         target="_blank"
-        className={`${className} flex gap-2 items-center transition-all hover:text-green-400 hover:-translate-y-0.5`}
+        className={`${className} flex gap-2 items-center transition-all hover:text-amber-500 hover:-translate-y-0.5`}
       >
         {children}
       </a>
@@ -43,42 +45,42 @@ export const MyLink = ({ className, type, href, children }: Props) => {
       return (
         <Anchor>
           {' '}
-          {children} <FaInstagram />{' '}
+          {children} <FaInstagram size={size}/>{' '}
         </Anchor>
       );
     case 'linkedin':
       return (
         <Anchor>
           {' '}
-          {children} <FaLinkedin />{' '}
+          {children} <FaLinkedin size={size}/>{' '}
         </Anchor>
       );
     case 'github':
       return (
         <Anchor>
           {' '}
-          {children} <FaGithub />{' '}
+          {children} <FaGithub size={size}/>{' '}
         </Anchor>
       );
     case 'text':
       return (
         <Anchor>
           {' '}
-          {children} <FaLink />{' '}
+          {children} <FaLink size={size}/>{' '}
         </Anchor>
       );
     case 'twitter':
       return (
         <Anchor>
           {' '}
-          {children} <FaTwitter />{' '}
+          {children} <FaTwitter size={size}/>{' '}
         </Anchor>
       );
     case 'medium':
       return (
         <Anchor>
           {' '}
-          {children} <BsMedium />{' '}
+          {children} <BsMedium size={size}/>{' '}
         </Anchor>
       );
     case 'none':
