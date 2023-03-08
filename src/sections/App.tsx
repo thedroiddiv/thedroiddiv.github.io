@@ -2,6 +2,7 @@ import { About } from './About';
 import { Home } from './Home';
 import { Skills } from './Skills';
 import { ExperienceSection } from './Experience';
+import { Projects } from './Projects';
 
 export const GrayApp = () => {
   return (
@@ -10,6 +11,7 @@ export const GrayApp = () => {
       <About />
       <Skills />
       <ExperienceSection />
+      <Projects/>
     </div>
   );
 };
