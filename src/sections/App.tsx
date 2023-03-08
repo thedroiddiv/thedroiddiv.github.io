@@ -11,7 +11,7 @@ export const GrayApp = () => {
       <About />
       <Skills />
       <ExperienceSection />
-      <Projects/>
+      <Projects />
     </div>
   );
 };
