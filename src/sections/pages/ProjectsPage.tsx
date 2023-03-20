@@ -1,7 +1,7 @@
 import { myProjects } from "../../data/Project";
 
 export const ProjectsPage = () => {
-    return <section id="projects_page">
+    return <section id="projects_page" className="bg-zinc-950">
         <section className={`p-8 md:p-16 flex flex-col gap-16 `}>
       {/*Title section*/}
       <div className={`flex flex-wrap gap-4 items-center`}>

@@ -8,15 +8,14 @@ export const Skills = () => {
         Technologies I have worked with{' '}
       </h4>
       <div
-        className={`flex flex-row flex-wrap gap-16 items-center justify-around  mt-16`}
+        className={`flex flex-row flex-wrap gap-8 items-center justify-around mt-16`}
       >
         <SkillCard>
           <div className={`p-8`}>
             <DiAndroid size={48} className={`text-zinc-900`} />
             <p className={`font-semibold mt-8`}>Android Development</p>
-            <p className={`mt-4  font-extralight text-sm `}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p className={`mt-4  font-light text-sm `}>
+            Java, Kotlin, XML,Firebase, Android-Jetpack, RoomDB, Retrofit, Dagger-Hilt
             </p>
           </div>
         </SkillCard>
@@ -25,9 +24,8 @@ export const Skills = () => {
           <div className={`p-8`}>
             <FaReact size={48} className={`text-zinc-900`} />
             <p className={`font-semibold mt-8`}>Frontend Development</p>
-            <p className={`mt-4  font-extralight text-sm `}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p className={`mt-4  font-light text-sm `}>
+            JavaScript, HTML, CSS, TailwindCSS, TypeScript, ReactJS, NodeJS
             </p>
           </div>
         </SkillCard>
@@ -36,9 +34,18 @@ export const Skills = () => {
           <div className={`p-8`}>
             <BiServer size={48} className={`text-zinc-900`} />
             <p className={`font-semibold mt-8`}>Backend Development</p>
-            <p className={`mt-4  font-extralight text-sm `}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p className={`mt-4  font-light text-sm `}>
+            TypeScript, NodeJS, ExpressJS, MongoDB, PostgreSQL, Firebase, OAuth
+            </p>
+          </div>
+        </SkillCard>
+
+        <SkillCard>
+          <div className={`p-8`}>
+            <BiServer size={48} className={`text-zinc-900`} />
+            <p className={`font-semibold mt-8`}>Languages</p>
+            <p className={`mt-4  font-light text-sm `}>
+            Kotlin, TypeScript, Java, Python, JavaScript, C++, Golang, SQL
             </p>
           </div>
         </SkillCard>
@@ -51,7 +58,7 @@ const SkillCard = ({ children }: { children: ReactNode }) => {
   return (
     <div
       className={`
-          card1 block relative bg-zinc-900 rounded-3xl z-0 text-white overflow-hidden w-80 hover:text-zinc-900 transition-colors duration-500
+          card1 block relative bg-zinc-900 rounded-3xl z-0 text-white overflow-hidden w-64 hover:text-zinc-900 transition-colors duration-500
           before:-z-10
           before:absolute
           before:-top-10

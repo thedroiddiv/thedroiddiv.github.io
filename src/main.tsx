@@ -4,16 +4,16 @@ import './index.css';
 import { GrayApp } from './sections/App';
 import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { ProjectsPage } from './sections/pages/ProjectsPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
-  },
-  {
-    path: '/gray',
     element: <GrayApp />,
-  },
+  },{
+    path:'/projects',
+    element: <ProjectsPage/>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

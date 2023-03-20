@@ -28,10 +28,10 @@ export const Home = () => {
               </p>
             </div>
             <div className='flex flex-col md:flex-row gap-4'>
-              <a href='' target='_blank' rel='noreferrer'>
+              <a href='https://drive.google.com/drive/folders/1ttXd8lkrDxIwml6-1GdasASdkqaLgdUA?usp=sharing' target='_blank' rel='noreferrer'>
                 <button className='border border-amber-500 text-amber-500 px-4 py-2'>Resume</button>
               </a>
-              <a href='' target='_blank' rel='noreferrer'>
+              <a href='https://github.com/divyanshdxn/' target='_blank' rel='noreferrer'>
                 <button className='border border-amber-500 bg-amber-500 text-zinc-950 px-4 py-2'>
                   Open Source
                 </button>

@@ -77,8 +77,8 @@ export const Projects = () => {
                 md:brightness-50 
                 md:hover:brightness-100 
                 md:hover:scale-105 
-                md:sepia 
-                md:hover:sepia-0 
+                md:grayscale 
+                md:hover:grayscale-0 
                 md:hover:shadow-2xl
                `}
               />
