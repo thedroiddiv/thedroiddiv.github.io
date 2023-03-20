@@ -1,5 +1,5 @@
-import { MyLink } from './MyLink';
 import React from 'react';
+import { SocialHandles } from '../components/SocialHandles';
 
 export {};
 
@@ -17,28 +17,4 @@ export const Footer = () => {
     <img className={'w-96 hidden md:block'} src={'assets/programmer_footer.svg'}/>
 
   </section>;
-};
-
-interface HandlesProps {
-  className?: string;
-}
-
-export const SocialHandles = ({ className }: HandlesProps) => {
-  return (
-    <ul className={` ${className ? className : ''} flex flex-row gap-4 `}>
-
-      <MyLink
-        type={'instagram'}
-        href={'https://www.instagram.com/divyanshdxn/'}
-        size={32}
-      />
-      <MyLink type={'twitter'} href={'https://www.twitter.com/divyanshdxn/'}  size={32}/>
-      <MyLink
-        type={'linkedin'}
-        href={'https://www.linkedin.com/in/divyanshdxn/'} size={32}
-      />
-      <MyLink type={'github'} href={'https://www.github.com/divyanshdxn/'}  size={32}/>
-      <MyLink type={'medium'} href={'https://www.medium.com/@divyanshdxn/'} size={32} />
-    </ul>
-  );
 };

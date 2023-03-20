@@ -3,7 +3,7 @@ import { BiServer, DiAndroid, FaReact } from 'react-icons/all';
 
 export const Skills = () => {
   return (
-    <section id={`section`} className={`p-8 md:p-16`}>
+    <section id={`skills`} className={`p-8 md:p-16`}>
       <h4 className={`text-4xl font-bold text-center md:text-left`}>
         Technologies I have worked with{' '}
       </h4>

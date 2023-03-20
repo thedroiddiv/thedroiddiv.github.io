@@ -1,47 +1,25 @@
-import { ReactNode } from 'react';
-import {
-  //FaDiscord,
-  FaGithub,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-} from 'react-icons/fa';
-import { BsMedium } from 'react-icons/bs';
+import { MyLink } from '../sections/MyLink';
+import React from 'react';
 
-type Props = {
-  href: string;
-  children: ReactNode;
+interface HandlesProps {
+  className?: string;
+}
+export const SocialHandles = ({ className }: HandlesProps) => {
+  return (
+    <ul className={` ${className ? className : ''} flex flex-row gap-4 `}>
+
+      <MyLink
+        type={'instagram'}
+        href={'https://www.instagram.com/divyanshdxn/'}
+        size={32}
+      />
+      <MyLink type={'twitter'} href={'https://www.twitter.com/divyanshdxn/'}  size={32}/>
+      <MyLink
+        type={'linkedin'}
+        href={'https://www.linkedin.com/in/divyanshdxn/'} size={32}
+      />
+      <MyLink type={'github'} href={'https://www.github.com/divyanshdxn/'}  size={32}/>
+      <MyLink type={'medium'} href={'https://www.medium.com/@divyanshdxn/'} size={32} />
+    </ul>
+  );
 };
-const SocialLink = ({ href, children }: Props) => (
-  <a
-    href={href}
-    rel="noreferrer"
-    target="_blank"
-    className="hover:text-green-600 transition "
-  >
-    {children}
-  </a>
-);
-
-export const SocialHandles = () => (
-  <div className="flex gap-4 flex-wrap">
-    <SocialLink href="https://www.instagram.com/divyanshdxn/">
-      <FaInstagram size={24} />
-    </SocialLink>
-    <SocialLink href="https://www.twitter.com/divyanshdxn/">
-      <FaTwitter size={24} />
-    </SocialLink>
-    {/** <SocialLink href="https://www.github.com/divyanshdxn//">
-      <FaDiscord size={24} />
-    </SocialLink> */}
-    <SocialLink href="https://www.linkedin.com/in/divyanshdxn/">
-      <FaLinkedin size={24} />
-    </SocialLink>
-    <SocialLink href="https://www.github.com/divyanshdxn/">
-      <FaGithub size={24} />
-    </SocialLink>
-    <SocialLink href="https://medium.com/@divyanshdxn">
-      <BsMedium size={24} />
-    </SocialLink>
-  </div>
-);

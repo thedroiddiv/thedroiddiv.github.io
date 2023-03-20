@@ -67,7 +67,7 @@ const ExperienceCard = ({ experience }: Props) => {
 export const ExperienceSection = () => {
   return (
     <section
-      id={`section`}
+      id={`experiences`}
       className={`flex flex-col gap-16 p-8`}
     >
       <p className={`text-4xl font-bold`}>Experience</p>

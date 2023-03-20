@@ -4,7 +4,7 @@ import { MyLink } from './MyLink';
 
 export const Projects = () => {
   return (
-    <section className={`p-8 md:p-16 flex flex-col gap-16 `}>
+    <section id={`projects`} className={`p-8 md:p-16 flex flex-col gap-16 `}>
       {/*Title section*/}
       <div className={`flex flex-wrap gap-4 items-center`}>
         <p className={`text-3xl font-semibold`}>
