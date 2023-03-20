@@ -9,7 +9,6 @@ import { NavBar } from '../components/NavBar';
 export const GrayApp = () => {
   return (
     <div className={`bg-zinc-950 text-white`}>
-      <NavBar />
       <Home />
       <About />
       <Skills />

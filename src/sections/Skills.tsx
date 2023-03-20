@@ -58,7 +58,7 @@ const SkillCard = ({ children }: { children: ReactNode }) => {
   return (
     <div
       className={`
-          card1 block relative bg-zinc-900 rounded-3xl z-0 text-white overflow-hidden w-64 hover:text-zinc-900 transition-colors duration-500
+          card1 block relative bg-zinc-900 rounded-3xl z-0 text-white overflow-hidden w-64 hover:text-zinc-900 transition-colors duration-700
           before:-z-10
           before:absolute
           before:-top-10
@@ -70,7 +70,7 @@ const SkillCard = ({ children }: { children: ReactNode }) => {
           before:scale-1
           before:origin-center
           before:transition-transform
-          before:duration-500
+          before:duration-1000
           before:hover:scale-[24]
           before:ease-in-out
           `}
