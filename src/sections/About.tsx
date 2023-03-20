@@ -12,7 +12,7 @@ export const About = () => {
           <p className="text-4xl font-bold text-center md:text-left">
             About Me
           </p>
-          <p className="text-gray-400 text-justify md:text-left">
+          <p className="text-gray-400 text-center md:text-left">
             Hello, I'm Divyansh, a passionate and self-driven Native Android
             Developer currently pursuing Bachelor of Technology in Electronics
             and Communication Engineering at IIIT Naya Raipur. Along with my
@@ -20,7 +20,7 @@ export const About = () => {
             open-source projects, and I am always exploring new technologies to
             expand my skill set.
           </p>
-          <p className="text-gray-400 text-justify md:text-left">
+          <p className="text-gray-400 text-center md:text-left">
             As a dedicated and driven individual, I am committed to developing
             high-quality projects, and I am constantly seeking new ways to
             improve my skills and knowledge. I also love creating beautiful and

@@ -1,6 +1,11 @@
+import { useVantaGlobe } from '../hooks/Vanta';
+
 export const Home = () => {
+  const myRef = useVantaGlobe();
+
   return (
     <section
+      ref = {myRef}
       id='home'
       className={`h-screen bg-[url(assets/bg_sm.svg)] md:bg-[url(assets/ellipse.svg)] bg-no-repeat bg-right-bottom bg-contain px-12 md:pl-32 md:pr-0`}
     >

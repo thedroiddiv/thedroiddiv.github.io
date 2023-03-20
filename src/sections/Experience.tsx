@@ -12,10 +12,10 @@ const ExperienceCard = ({ experience }: Props) => {
 
   return (
     <div
-      className={`w-full flex flex-col md:flex-row gap-8 justify-start bg-zinc-900 p-8 rounded-3xl transition-all`}
+      className={`w-full md:w-96 flex flex-col gap-8 justify-start bg-zinc-900 p-8 rounded-3xl transition-all`}
     >
       {/* Title and Duration section */}
-      <div className={`flex flex-col gap-8 md:w-1/5`}>
+      <div className={`flex flex-col gap-8`}>
         <div>
           <p className={`text-xl font-bold`}>{experience.title}</p>
           <p className={`opacity-50 mt-2`}>{experience.organisation}</p>
@@ -27,7 +27,7 @@ const ExperienceCard = ({ experience }: Props) => {
       </div>
 
       {/* Work and About section */}
-      <div className={`md:w-4/5`}>
+      <div className={``}>
         <div className={`flex gap-4`}>
           <button
             className={`rounded-full  ${
@@ -49,13 +49,13 @@ const ExperienceCard = ({ experience }: Props) => {
           )}
         </div>
         {selectedTab == 'work' ? (
-          <ul className={`mt-4 list-disc text-sm md:text-base opacity-75`}>
+          <ul className={`mt-4 list-disc text-sm opacity-75`}>
             {experience.desc.map((str) => (
               <li>{str}</li>
             ))}
           </ul>
         ) : (
-          <p className={`mt-4 text-sm md:text-base opacity-75`}>
+          <p className={`mt-4 text-sm  opacity-75`}>
             {experience.about}
           </p>
         )}
@@ -68,12 +68,15 @@ export const ExperienceSection = () => {
   return (
     <section
       id={`section`}
-      className={`flex flex-col items-center md:items-start gap-16 p-8 md:p-16`}
+      className={`flex flex-col gap-16 p-8`}
     >
       <p className={`text-4xl font-bold`}>Experience</p>
-      {myExperiences.map((exp) => (
-        <ExperienceCard experience={exp} />
-      ))}
+      <div className={`flex flex-wrap gap-8 justify-evenly`}>
+        {myExperiences.map((exp) => (
+          <ExperienceCard experience={exp} />
+        ))}
+      </div>
+
     </section>
   );
 };
