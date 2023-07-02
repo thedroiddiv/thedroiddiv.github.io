@@ -5,8 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily : {
+        'pacifico' : ['Pacifico', 'cursive'],
+        'mosk' : ['Mosk', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
+  darkMode: 'class',
 }
 
