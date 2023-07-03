@@ -8,7 +8,7 @@ export default {
     extend: {
       fontFamily : {
         'pacifico' : ['Pacifico', 'cursive'],
-        'jetbrains-mono' : ['JetBrains Mono', 'sans-serif'],
+        'mosk' : ['Mosk', 'sans-serif'],
       }
     },
   },

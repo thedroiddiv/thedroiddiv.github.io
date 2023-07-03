@@ -17,11 +17,11 @@ function App() {
         setDarkMode: setDarkMode,
       }}
     >
-      <main className="w-screen bg-[#F6F4F6] text-[#252326] dark:bg-[#252326] dark:text-[#F6F4F6] font-jetbrains-mono">
+      <main className="w-screen bg-[#F6F4F6] text-[#363338] dark:bg-[#252326] dark:text-[#F6F4F6]">
         <Navbar />
         <Home />
-        <Experience/>
         <Projects/>
+        <Experience/>
         <Footer/>
       </main>
     </ThemeContext.Provider>

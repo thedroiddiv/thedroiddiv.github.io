@@ -19,7 +19,6 @@ export const Navbar = () => {
                         <NavItem>me</NavItem>
                         <NavItem>experience</NavItem>
                         <NavItem>projects</NavItem>
-                        <NavItem>github</NavItem>
                     </ul>
                     <ThemeSwitch isDarkMode={darkMode} setDarkMode={setDarkMode} />
                 </nav>
