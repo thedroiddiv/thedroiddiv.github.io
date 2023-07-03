@@ -1,17 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.stroke {
-    -webkit-text-stroke: 2px #ffffff;
-    color: rgba(0, 0, 0, 0);
-    transition: color 0.25s ease-in-out;
-}
-
-.stroke:hover {
-    color: #ffffff;
-}
-
-* {
-    box-sizing: border-box
-}
