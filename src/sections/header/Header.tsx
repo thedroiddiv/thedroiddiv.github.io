@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import logo from '../../assets/divyansh.svg';
 import ThemeContext from '../../theme/ThemeContext';
 import { ThemeSwitch } from './ToggleButton';
 import { NavItem } from './NavItem';
