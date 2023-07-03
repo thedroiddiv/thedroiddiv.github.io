@@ -5,7 +5,8 @@ export const ExperienceCard = () => {
             <hr />
         </div> */}
         <div className="md:w-4/5">
-            <h2 className="text-3xl font-bold">I am currently working as an SDE at Karya Inc</h2>
+            <h2 className="text-3xl font-bold relative before:absolute before:-left-20 
+            before:top-1/2 before:-translate-y-1/2 before:w-16 before:h-0.5 before:bg-black before:dark:bg-white">I am currently working as an SDE at Karya Inc</h2>
             <p className="mt-8 font-light leading-normal">
                 Animation is one of the best ways to bring brand personality and character to an online experience, but in the busy world of front-end development, it can often be overlooked.
                 <br />
