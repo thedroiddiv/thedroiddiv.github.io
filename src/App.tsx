@@ -1,5 +1,4 @@
 import { Experience } from "./sections/experience/Experience";
-import { Footer } from "./sections/footer/Footer";
 import { Navbar } from "./sections/header/Header";
 import { Home } from "./sections/home/Home";
 import { Projects } from "./sections/projects/Projects";
@@ -22,7 +21,6 @@ function App() {
         <Home />
         <Projects/>
         <Experience/>
-        <Footer/>
       </main>
     </ThemeContext.Provider>
 
