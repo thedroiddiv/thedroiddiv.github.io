@@ -1,10 +1,10 @@
 import { SocialHandles } from './SocialHandles';
 
 export const Footer = () => {
-    return <section id='footer' className={'p-8 md:py-32 md:px-48 bg-[#8BDAC0]  dark:bg-[#252326] '}>
+    return <section id='footer' className={'p-8 md:py-32 md:px-48 bg-[#A990D6] dark:bg-[#43335C] '}>
 
 
-        <div className={'bg-[#A990D6] dark:bg-[#6B375D] p-8 rounded-3xl text-center border-2 border-black dark:border-white'}>
+        <div className={'bg-[#8BDAC0] dark:bg-[#6B375D] p-8 rounded-3xl text-center border-2 border-black dark:border-white'}>
             <p className={'text-4xl '}>Designed and Developed By:</p>
             <p className={'text-2xl font-extralight mt-4'}>Divyansh Kushwaha</p>
             <p className={''}>divyanshdxn@gmail.com</p>

@@ -11,3 +11,16 @@
 .stroke:hover {
     color: #ffffff;
 }
+
+.dash{
+position: relative;
+}
+.dash:after {
+    content: "";
+    position: absolute;
+    right: -8rem;
+    top: 50%;
+    width: 6rem;
+    height: 2px;
+    background: #ffffff;
+}
