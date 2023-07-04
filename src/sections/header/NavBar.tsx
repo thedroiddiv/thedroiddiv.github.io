@@ -11,7 +11,6 @@ export const Navbar = () => {
     <header className="absolute z-20 top-0 bg-transparent p-8 w-full">
       <div className="flex justify-between items-center">
         <a href="#">
-          {/* <img src={logo} alt="logo" className="md:h-16 mr-2" /> */}
           <DivyanshSVG />
         </a>
         <nav className="flex">
