@@ -2,6 +2,7 @@ import { AboutMe } from './sections/about/Aboout';
 import { Experience } from './sections/experience/Experience';
 import Navbar from './sections/header/NavBar';
 import { Home } from './sections/home/Home';
+import { Projects } from './sections/projects/Projects';
 import ThemeContext from './theme/ThemeContext';
 import useDarkMode from './theme/useDarkMode';
 
@@ -19,6 +20,7 @@ function App() {
         <Home />
         <AboutMe />
         <Experience />
+        <Projects />
       </main>
     </ThemeContext.Provider>
   );
