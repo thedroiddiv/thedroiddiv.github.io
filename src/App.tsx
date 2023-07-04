@@ -1,4 +1,5 @@
 import { AboutMe } from './sections/about/Aboout';
+import { Experience } from './sections/experience/Experience';
 import Navbar from './sections/header/NavBar';
 import { Home } from './sections/home/Home';
 import ThemeContext from './theme/ThemeContext';
@@ -17,6 +18,7 @@ function App() {
         <Navbar />
         <Home />
         <AboutMe />
+        <Experience />
       </main>
     </ThemeContext.Provider>
   );
