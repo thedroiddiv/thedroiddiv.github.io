@@ -1,5 +1,6 @@
 import { AboutMe } from './sections/about/Aboout';
 import { Experience } from './sections/experience/Experience';
+import { Footer } from './sections/footer/Footer';
 import Navbar from './sections/header/NavBar';
 import { Home } from './sections/home/Home';
 import { Projects } from './sections/projects/Projects';
@@ -21,6 +22,7 @@ function App() {
         <AboutMe />
         <Experience />
         <Projects />
+        <Footer />
       </main>
     </ThemeContext.Provider>
   );
