@@ -5,7 +5,10 @@ import { FiExternalLink } from 'react-icons/fi';
 
 export const Experience = () => {
   return (
-    <section className="p-8 md:py-32  bg-[#FDF8BB] dark:bg-[#252326] flex justify-center">
+    <section
+      id="experience"
+      className="p-8 md:py-32  bg-[#FDF8BB] dark:bg-[#252326] flex justify-center"
+    >
       <div className="max-w-screen-lg">
         <div className="w-fit">
           <h3

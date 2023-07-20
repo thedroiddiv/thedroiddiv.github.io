@@ -2,7 +2,10 @@ import me from '../../assets/me.png';
 
 export const AboutMe = () => {
   return (
-    <section className="px-8 py-32 bg-[#FDF8BB] dark:bg-[#252326] flex flex-col md:flex-row justify-center">
+    <section
+      id="about"
+      className="px-8 py-32 bg-[#FDF8BB] dark:bg-[#252326] flex flex-col md:flex-row justify-center"
+    >
       <div className="max-w-screen-lg flex flex-col md:flex-row items-center self-center	">
         <div className="md:w-2/3">
           <h1 className="text-6xl font-bold">About me.</h1>

@@ -15,10 +15,10 @@ export const Navbar = () => {
         </a>
         <nav className="flex">
           <ul className="hidden md:flex mr-16">
-            <NavItem>me</NavItem>
-            <NavItem>experience</NavItem>
-            <NavItem>projects</NavItem>
-            <NavItem>github</NavItem>
+            <NavItem to="about">me</NavItem>
+            <NavItem to="experience">experience</NavItem>
+            <NavItem to="projects">projects</NavItem>
+            <NavItem to="footer">contact</NavItem>
           </ul>
           <ThemeSwitch isDarkMode={darkMode} setDarkMode={setDarkMode} />
         </nav>
