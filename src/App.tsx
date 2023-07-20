@@ -1,4 +1,4 @@
-import { AboutMe } from './sections/about/Aboout';
+import { AboutMe } from './sections/about/About';
 import { Experience } from './sections/experience/Experience';
 import { Footer } from './sections/footer/Footer';
 import Navbar from './sections/header/NavBar';
