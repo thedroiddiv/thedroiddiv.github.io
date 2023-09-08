@@ -6,6 +6,7 @@ interface Props {
   tech_stack: string[];
   preview: string[]; // [name, url]
   github: string[]; // [name, url]
+  additional?: string[]; // [name, url]
 }
 
 export const ProjectCard: React.FC<Props> = ({
@@ -13,6 +14,7 @@ export const ProjectCard: React.FC<Props> = ({
   desc,
   preview,
   github,
+  additional,
 }) => {
   return (
     <div className="h-min w-full rounded-2xl border-2 border-[#252326] dark:border-white bg-white dark:bg-transparent">
@@ -26,6 +28,11 @@ export const ProjectCard: React.FC<Props> = ({
       <div className="px-4 py-8">
         <h3 className="text-2xl font-bold">{title}</h3>
         <p className="mt-4 font-light leading-normal">{desc}</p>
+        {additional && (
+          <p className="hover:text-blue-300 mt-3 inline underline">
+            <a href={additional[1]}>{additional[0]}</a>
+          </p>
+        )}
         <div className="flex flex-row justify-between mt-6">
           <a
             href={preview[1]}

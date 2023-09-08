@@ -11,13 +11,17 @@ export const Projects = () => {
         <div className="grid gap-6 md:grid-cols-3 mt-16">
           <ProjectCard
             title="WallpaperX: Unsplash powered wallpaper app"
-            desc="A simple wallpaper application. WallpaperX brings cool and fresh wallpapers just to you from unsplash.com. Set wallpapers for your home and lock screen, download and share"
+            desc="A simple wallpaper application. WallpaperX brings cool and fresh wallpapers just to you from unsplash.com. Set wallpapers for your home and lock screen, download and share."
             tech_stack={[]}
             preview={[
               'Preview',
               'https://play.google.com/store/apps/details?id=com.dxn.wallpaperx.ui&pli=1',
             ]}
             github={['GitHub', 'https://github.com/thedroiddiv/WallpaperX']}
+            additional={[
+              'Download apk',
+              'https://github.com/thedroiddiv/WallpaperX/releases/download/v1.0.8/app-release.apk',
+            ]}
           />
           <ProjectCard
             title="RawAudioRecorder"
