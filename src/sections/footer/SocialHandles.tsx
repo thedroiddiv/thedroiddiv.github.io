@@ -12,27 +12,27 @@ export const SocialHandles = ({ className }: HandlesProps) => {
     >
       <MyLink
         type={'instagram'}
-        href={'https://www.instagram.com/divyanshdxn/'}
+        href={'https://www.instagram.com/thedroiddiv/'}
         size={32}
       />
       <MyLink
         type={'twitter'}
-        href={'https://www.twitter.com/divyanshdxn/'}
+        href={'https://www.twitter.com/thedroiddiv/'}
         size={32}
       />
       <MyLink
         type={'linkedin'}
-        href={'https://www.linkedin.com/in/divyanshdxn/'}
+        href={'https://www.linkedin.com/in/thedroiddiv/'}
         size={32}
       />
       <MyLink
         type={'github'}
-        href={'https://www.github.com/divyanshdxn/'}
+        href={'https://www.github.com/thedroiddiv/'}
         size={32}
       />
       <MyLink
         type={'medium'}
-        href={'https://www.medium.com/@divyanshdxn/'}
+        href={'https://www.medium.com/@thedroiddiv/'}
         size={32}
       />
     </ul>

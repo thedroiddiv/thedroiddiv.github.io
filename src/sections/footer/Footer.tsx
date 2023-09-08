@@ -13,7 +13,7 @@ export const Footer = () => {
       >
         <p className={'text-4xl '}>Designed and Developed By:</p>
         <p className={'text-2xl font-extralight mt-4'}>Divyansh Kushwaha</p>
-        <p className={''}>divyanshdxn@gmail.com</p>
+        <p className={''}>thedroiddiv@gmail.com</p>
         <p className={'f'}>+91-8354931770</p>
         <SocialHandles className={'mt-12'} />
       </div>
