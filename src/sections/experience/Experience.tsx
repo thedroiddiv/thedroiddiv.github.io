@@ -32,7 +32,7 @@ export const Experience = () => {
               />
             </p>
           }
-          title="I am currently working as an SDE at Karya Inc"
+          title="I am currently working as Lead Android Engineer at Karya Inc"
           desc="At Karya, I lead the development of the Karya Android app where users can do dataset collection and labeling of images, text, audio, and video via a WhatsApp-like chat-based UI. Tasks include annotating, labeling, and classifying images; converting text-to-speech and speech-to-text; collecting the image, audio, and video dataset; etc via phone. "
           tech_stack={[
             'Android',

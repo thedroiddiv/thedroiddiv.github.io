@@ -25,12 +25,12 @@ export const Home = () => {
             className="h-8 md:h-12 inline -translate-y-1 hover:scale-150 transition-all"
             src={android}
           />{' '}
-          with code. Sometimes, I like to{' '}
+          with code. I like to design{' '}
           <img
             className="h-8 md:h-12 -translate-y-1 inline hover:scale-150 transition-all"
             src={figma}
           />{' '}
-          design.
+          too.
         </p>
         <div className="flex flex-row mt-4 gap-3">
           <a

@@ -11,13 +11,13 @@ export const AboutMe = () => {
           <h1 className="text-6xl font-bold">About me.</h1>
           <p className="mt-12 md:mr-16">
             Hello, I'm Divyansh, a passionate and self-driven Native Android
-            Developer currently pursuing Bachelor of Technology in Electronics
-            and Communication Engineering at IIIT Naya Raipur, India 🇮🇳. Along
-            with my expertise in Android development, I actively contribute to
+            Developer. Currently, I am working at Karya where I lead the Android Team.
+            I am an Electronics and Communication Engineering graduate from IIIT Naya Raipur, India 🇮🇳. 
+            Along with my daily job as Lead Android Engineer, I actively contribute to
             open-source projects.
           </p>
           <p className="mt-6 md:mr-16">
-            Currently, I'm focused on building an awesome platform for rural
+            Focused on building an awesome platform for rural
             employment in India at Karya Inc.
           </p>
           <ul className="flex flex-row flex-wrap mt-12 gap-2 md:w-3/4">
