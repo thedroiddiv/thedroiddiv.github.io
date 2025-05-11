@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 interface Props {
   organization: ReactNode;
   title: ReactNode;
-  desc: string;
+  desc: ReactNode;
   tech_stack: string[];
   duration: string;
   children?: ReactNode;

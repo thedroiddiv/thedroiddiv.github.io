@@ -2,6 +2,7 @@ import { ExperienceCard } from './ExperienceCard';
 import gsoc from '../../assets/gsoc.svg';
 import karya from '../../assets/karya.svg';
 import { FiExternalLink } from 'react-icons/fi';
+import KaryaTimeline from './Timeline';
 
 export const Experience = () => {
   return (
@@ -32,8 +33,8 @@ export const Experience = () => {
               />
             </p>
           }
-          title="I am currently working as Lead Android Engineer at Karya Inc"
-          desc="At Karya, I lead the development of the Karya Android app where users can do dataset collection and labeling of images, text, audio, and video via a WhatsApp-like chat-based UI. Tasks include annotating, labeling, and classifying images; converting text-to-speech and speech-to-text; collecting the image, audio, and video dataset; etc via phone. "
+          title="I am currently working as Lead Android Engineer at Karya"
+          desc={<KaryaTimeline/>}
           tech_stack={[
             'Android',
             'Kotlin',
@@ -106,7 +107,7 @@ export const Experience = () => {
             |
             <a
               className="font-light hover:font-bold transition-all"
-              href="https://medium.com/@divyanshdxn/divyansh-kushwahas-gsoc-2022-report-a5ab871db6ed"
+              href="https://drive.google.com/file/d/19YLQV3Mhf1DQancwsj1n56UwvDDG61XV/view?usp=sharing"
               target="_blank"
             >
               Certificate <FiExternalLink className="inline" />

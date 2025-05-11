@@ -24,16 +24,29 @@ export const Projects = () => {
             ]}
           />
           <ProjectCard
+            title="ChitraLekhan"
+            desc="An Image Annotation Android library for handwriting input, built using Jetpack Compose and Canvas APIs"
+            tech_stack={[]}
+            preview={[
+              'Preview',
+              'https://github.com/karya-inc/ChitraLekhan',
+            ]}
+            github={[
+              'GitHub',
+              'https://github.com/karya-inc/ChitraLekhan',
+            ]}
+          />
+          <ProjectCard
             title="RawAudioRecorder"
             desc="A lightweight audio recording library that records in .wav format"
             tech_stack={[]}
             preview={[
               'Preview',
-              'https://github.com/thedroiddiv/RawAudioRecorder',
+              'https://github.com/karya-inc/RawAudioRecorder',
             ]}
             github={[
               'GitHub',
-              'https://github.com/thedroiddiv/RawAudioRecorder',
+              'https://github.com/karya-inc/RawAudioRecorder',
             ]}
           />
           <ProjectCard
