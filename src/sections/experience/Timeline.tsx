@@ -1,7 +1,7 @@
 const timeline = [
   {
     title: 'Lead Android Engineer',
-    date: 'June 2023 – Present',
+    date: 'Apr 2025 - Present',
     description: (
       <ul className="list-disc list-inside mt-2 text-gray-300 space-y-1">
         <li>Leading the Android team and overseeing feature development</li>
@@ -30,7 +30,7 @@ const timeline = [
   },
   {
     title: 'Software Engineer',
-    date: 'October 2022 – June 2023',
+    date: 'June 2023 - Mar 2025',
     description: (
       <ul className="list-disc list-inside mt-2 text-gray-300 space-y-1">
         <li>
@@ -59,7 +59,7 @@ const timeline = [
   },
   {
     title: 'Software Engineering Intern',
-    date: 'July 2022 – October 2022',
+    date: 'Sept 2022 - May 2023',
     description: (
       <ul className="list-disc list-inside mt-2 text-gray-300 space-y-1">
         <li>
