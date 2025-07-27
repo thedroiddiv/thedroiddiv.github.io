@@ -1,4 +1,5 @@
 import me from '../../assets/me.png';
+import { ReactNode } from 'react';
 
 export const AboutMe = () => {
   return (
@@ -10,43 +11,26 @@ export const AboutMe = () => {
         <div className="md:w-2/3">
           <h1 className="text-6xl font-bold">About me.</h1>
           <p className="mt-12 md:mr-16">
-            Hi, I'm Divyansh — a passionate Android Engineer with 3+ years of 
-            experience building scalable mobile apps using Jetpack Compose, 
-            Kotlin, and modern Android tools. I currently lead the Android team 
-            at Karya, where we're building inclusive, low-resource technology 
-            to support rural employment across India 🇮🇳. I hold a B.Tech in 
-            Electronics and Communication Engineering from IIIT Naya Raipur. 
+            Hi, I'm Divyansh — a passionate Android Engineer with 3+ years of
+            experience building scalable mobile apps using Jetpack Compose,
+            Kotlin, and modern Android tools. I currently lead the Android team
+            at Karya, where we're building inclusive, low-resource technology to
+            support rural employment across India 🇮🇳. I hold a B.Tech in
+            Electronics and Communication Engineering from IIIT Naya Raipur.
             <br />
             <br />
-            Outside of work, I actively contribute to open-source projects 
-            and focus on creating accessible, high-performance tools that 
-            make a real-world impact.
+            Outside of work, I actively contribute to open-source projects and
+            focus on creating accessible, high-performance tools that make a
+            real-world impact.
           </p>
           <ul className="flex flex-row flex-wrap mt-12 gap-2 md:w-3/4">
-            <li className="px-4 py-2 bg-[#8BDAC0] dark:bg-[#6B375D] border-2 rounded-3xl border-black dark:border-white">
-              Android
-            </li>
-            <li className="px-4 py-2 bg-[#8BDAC0] dark:bg-[#6B375D] border-2 rounded-3xl border-black dark:border-white">
-              Kotlin
-            </li>
-            <li className="px-4 py-2 bg-[#8BDAC0] dark:bg-[#6B375D] border-2 rounded-3xl border-black dark:border-white">
-              Jetpack Compose
-            </li>
-            <li className="px-4 py-2 bg-[#8BDAC0] dark:bg-[#6B375D] border-2 rounded-3xl border-black dark:border-white">
-              Room DB
-            </li>
-            <li className="px-4 py-2 bg-[#8BDAC0] dark:bg-[#6B375D] border-2 rounded-3xl border-black dark:border-white">
-              Retofit
-            </li>
-            <li className="px-4 py-2 bg-[#8BDAC0] dark:bg-[#6B375D] border-2 rounded-3xl border-black dark:border-white">
-              SQLite
-            </li>
-            <li className="px-4 py-2 bg-[#8BDAC0] dark:bg-[#6B375D] border-2 rounded-3xl border-black dark:border-white">
-              Dagger-Hilt
-            </li>
-            <li className="px-4 py-2 bg-[#8BDAC0] dark:bg-[#6B375D] border-2 rounded-3xl border-black dark:border-white">
-              Android
-            </li>
+            <li><SkillTag skill='Android'/></li>
+            <li><SkillTag skill='Kotlin'/></li>
+            <li><SkillTag skill='KMP'/></li>
+            <li><SkillTag skill='Jetpack Compose'/></li>
+            <li><SkillTag skill='Room DB'/></li>
+            <li><SkillTag skill='Retrofit'/></li>
+            <li><SkillTag skill='Dagger-Hilt'/></li>
           </ul>
         </div>
         <div className="mt-16 md:mt-0 md:w-1/3 rounded-lg">
@@ -60,5 +44,18 @@ export const AboutMe = () => {
         </div>
       </div>
     </section>
+  );
+};
+
+interface Props {
+  skill: string;
+}
+
+
+export const SkillTag : React.FC<Props> = ({skill}: Props) => {
+  return (
+    <p className="px-4 py-2 bg-[#8BDAC0] dark:bg-[#6B375D] border-2 rounded-3xl border-black dark:border-white">
+      {skill}
+    </p>
   );
 };

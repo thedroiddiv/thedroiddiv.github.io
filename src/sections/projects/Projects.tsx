@@ -10,26 +10,23 @@ export const Projects = () => {
         <h1 className="text-6xl font-bold">Projects.</h1>
         <div className="grid gap-6 md:grid-cols-3 mt-16">
           <ProjectCard
-            title="WallpaperX: Unsplash powered wallpaper app"
-            desc="A simple wallpaper application. WallpaperX brings cool and fresh wallpapers just to you from unsplash.com. Set wallpapers for your home and lock screen, download and share."
-            tech_stack={[]}
+            title="Waveform"
+            desc="A modern, Jetpack Compose-based Android library to visualize audio waveforms, playback progress, and interactively select or segment audio clips with ease."
+            tech_stack={["Kotlin", "Coroutines", "Jetpack Compose"]}
             preview={[
-              'Preview',
-              'https://play.google.com/store/apps/details?id=com.dxn.wallpaperx.ui&pli=1',
+              'Maven Central',
+              'https://mvnrepository.com/artifact/io.github.karya-inc/waveform',
             ]}
-            github={['GitHub', 'https://github.com/thedroiddiv/WallpaperX']}
-            additional={[
-              'Download apk',
-              'https://github.com/thedroiddiv/WallpaperX/releases/download/v1.0.8/app-release.apk',
-            ]}
+            github={['GitHub', 'https://github.com/karya-inc/Waveform']}
+            additional={[]}
           />
           <ProjectCard
             title="ChitraLekhan"
             desc="An Image Annotation Android library for handwriting input, built using Jetpack Compose and Canvas APIs"
             tech_stack={[]}
             preview={[
-              'Preview',
-              'https://github.com/karya-inc/ChitraLekhan',
+              'Maven Central',
+              'https://mvnrepository.com/artifact/io.github.karya-inc/chitralekhan',
             ]}
             github={[
               'GitHub',
@@ -41,12 +38,26 @@ export const Projects = () => {
             desc="A lightweight audio recording library that records in .wav format"
             tech_stack={[]}
             preview={[
-              'Preview',
-              'https://github.com/karya-inc/RawAudioRecorder',
+              'Maven Central',
+              'https://mvnrepository.com/artifact/io.github.karya-inc/rawaudiorecorder',
             ]}
             github={[
               'GitHub',
               'https://github.com/karya-inc/RawAudioRecorder',
+            ]}
+          />
+          <ProjectCard
+            title="WallpaperX: Unsplash powered wallpaper app"
+            desc="A simple wallpaper application. WallpaperX brings cool and fresh wallpapers just to you from unsplash.com. Set wallpapers for your home and lock screen, download and share."
+            tech_stack={[]}
+            preview={[
+              'Preview',
+              'https://play.google.com/store/apps/details?id=com.dxn.wallpaperx.ui&pli=1',
+            ]}
+            github={['GitHub', 'https://github.com/thedroiddiv/WallpaperX']}
+            additional={[
+              'Download apk',
+              'https://github.com/thedroiddiv/WallpaperX/releases/download/v1.0.8/app-release.apk',
             ]}
           />
           <ProjectCard

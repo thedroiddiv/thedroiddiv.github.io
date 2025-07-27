@@ -3,27 +3,39 @@ const timeline = [
     title: 'Lead Android Engineer',
     date: 'Apr 2025 - Present',
     description: (
-      <ul className="list-disc list-inside mt-2 text-gray-300 space-y-1">
-        <li>Leading the Android team and overseeing feature development</li>
+      <ul className="list-disc list-inside mt-2 space-y-1">
         <li>
-          Working on the performance enhancement and new features around Generic
-          Task Framework
+          Leading a team of 4 Android developers, overseeing technical planning,
+          code reviews, and mentorship
         </li>
         <li>
-          Managing release cycles for apps with 50K+ installs while ensuring
-          seamless cross-team collaboration
+          Defined and enforced coding standards via custom Android Lint rules
         </li>
         <li>
-          Defining and maintaining code contribution guidelines to streamline
-          collaboration in a multi-developer environment
+          Refactored app into a feature-based multi-module architecture to
+          enhance scalability
         </li>
         <li>
-          Building internal tools to automate workflows and enhance testing,
-          code formatting, and overall code quality
+          Extracted and maintained reusable components as open-source libraries:
+          <li>
+            Waveform (audio waveform renderer and other waveform related audio
+            transformation tools)
+          </li>
+          <li>
+            ChitraLekhan, RawAudioRecorder
+          </li>
+          <li>
+            Serialization-KTX (Karya-specific kotlinx-serialization extensions)
+          </li>
         </li>
         <li>
-          Conducting sprint planning, facilitating meetings, and leading
-          technical interviews
+         Driving performance enhancements and new features for the Generic Task Framework
+        </li>
+        <li>
+          Building internal tools to automate dev workflows, testing, and code quality enforcement
+        </li>
+        <li>
+          Leading sprint planning, technical interviews, and engineering-wide collaboration on platform direction
         </li>
       </ul>
     ),
@@ -32,12 +44,12 @@ const timeline = [
     title: 'Software Engineer',
     date: 'June 2023 - Mar 2025',
     description: (
-      <ul className="list-disc list-inside mt-2 text-gray-300 space-y-1">
+      <ul className="list-disc list-inside mt-2 space-y-1">
         <li>
           Architected a “Generic Task Framework” to support 9K+ data collection
           task types to 50K+ users
         </li>
-        <li>Developed task scheduling, sync, and media pipeline modules</li>
+        <li>eveloped core modules for task scheduling, data sync, and media pipelines</li>
         <li>
           Refactored legacy UI with Jetpack Compose, improving maintainability
           and speed
@@ -59,24 +71,26 @@ const timeline = [
   },
   {
     title: 'Software Engineering Intern',
-    date: 'Sept 2022 - May 2023',
+    date: 'Oct 2022 - May 2023',
     description: (
-      <ul className="list-disc list-inside mt-2 text-gray-300 space-y-1">
+      <ul className="list-disc list-inside mt-2 space-y-1">
         <li>
-          Built audio and image capture flows with offline-first logic and
-          minimal permissions
+         Developed the first version of the Karya Android app from scratch
         </li>
         <li>
-          Implemented Room-based local storage and background task execution
-          with WorkManager
+         Built audio and image capture flows with offline-first architecture and minimal permissions
         </li>
         <li>
-          Developed features for image/audio/video annotation, TTS/STT tasks,
-          and data gathering via phone
+         Implemented Room-based local storage and background execution using WorkManager
         </li>
         <li>
-          Contributed to early feature testing and UX iterations for
-          low-literacy users
+         Developed features for image/audio/video annotation, TTS/STT, and phone-based data collection
+        </li>
+        <li>
+          Contributed to early UX and accessibility testing for low-literacy users
+        </li>
+        <li>
+          Designed a robust sync mechanism with Retrofit, WorkManager, and DownloadManager aligned with Karya’s offline-first principles
         </li>
       </ul>
     ),
@@ -91,11 +105,11 @@ export default function KaryaTimeline() {
           <div key={index} className="mb-14 relative pl-8 flex items-start">
             <div className="absolute -left-2 top-1/2 transform -translate-y-1/2 w-4 h-4 bg-green-400 border-2 border-white rounded-full" />
             <div>
-              <h3 className="text-xl font-semibold text-white">{item.title}</h3>
-              <time className="block mb-1 text-sm font-medium text-gray-400">
+              <h3 className="text-xl font-semibold dark:text-white">{item.title}</h3>
+              <time className="block mb-1 text-sm font-medium dark:text-gray-400">
                 {item.date}
               </time>
-              <p className="text-gray-300">{item.description}</p>
+              <p className="dark:text-gray-300">{item.description}</p>
             </div>
           </div>
         ))}

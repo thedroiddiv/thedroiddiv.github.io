@@ -84,7 +84,7 @@ export const Experience = () => {
             </p>
           }
           title="In summer 2022, I worked as GSoC contributor at AnkiDroid"
-          desc="During my Google Summer of Code journey, I worked on migrating the AnkiDroid android app codebase from AsyncTask(deprecated) to Kotlin Coroutines. My work was extensively around replacing the underlying architecture of Asynchronous operations to use the newer and better Kotlin Coroutines. I also wrote a bash script to automate the set up of the testing environment on Unix Environment, it proved to be a very useful tool for folks around the community as it was really hard for new contributors to set up."
+          desc="During my Google Summer of Code journey, I worked under the mentorship of the organization AnkiDroid on migrating the AnkiDroid android app codebase from AsyncTask(deprecated) to Kotlin Coroutines. My work was extensively around replacing the underlying architecture of Asynchronous operations to use the newer and better Kotlin Coroutines. I also wrote a bash script to automate the set up of the testing environment on Unix Environment, it proved to be a very useful tool for folks around the community as it was really hard for new contributors to set up."
           tech_stack={[
             'Android',
             'Kotlin',
