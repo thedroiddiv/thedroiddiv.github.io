@@ -1,5 +1,4 @@
 import me from '../../assets/me.png';
-import { ReactNode } from 'react';
 
 export const AboutMe = () => {
   return (
